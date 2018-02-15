@@ -1,16 +1,16 @@
 import React from 'react';
 
 
-const Nav = (props) => (
+const Footer = (props) => (
 
-    <nav className="main-nav">
+    <footer>
       <ul>
         <li><a href='#'> GitHub </a></li>
         <li><a href='#'> Facebook </a></li>
         <li><a href='#'> Linkedin </a></li>
       </ul>
-    </nav>
+    </footer>
   );
 
 
-export default Nav;
+export default Footer;
