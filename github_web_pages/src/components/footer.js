@@ -7,7 +7,7 @@ const Footer = (props) => (
       <ul>
         <li><a href='#'> GitHub </a></li>
         <li><a href='#'> Facebook </a></li>
-        <li><a href='#'> Linkedin </a></li>
+        <li><a href='#Work'> Linkedin </a></li>
       </ul>
     </footer>
   );

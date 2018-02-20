@@ -19,9 +19,19 @@ export default class Home extends Component {
         <p>Please <a href='#'>Contact Me</a> if you would like to collaborate togather.</p>
         </p>
 
+
+        {/* line seperator */}
+        <p>------------------------------------------------------------------</p>
+
+        <h1>Let's collaborate on a project togather</h1>
         <a href='#'><span> GitHub </span></a>
         <a href='#'><span> Facebook </span></a>
         <a href='#'><span> Linkedin </span></a>
+
+
+        {/* footer */}
+
+
       </div>
     );
   }
