@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
 import '../App.css';
+import {
+  HomePage
+} from '../data/homePage';
 
 export default class Home extends Component {
 
@@ -35,6 +38,10 @@ export default class Home extends Component {
 
 
         {/* footer */}
+
+        <Route path={`/`}
+          render={ () => <CourseContainer data={HTMLCourses} /> }
+        />
 
 
       </div>
