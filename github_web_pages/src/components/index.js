@@ -9,9 +9,14 @@ export default class Home extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to the Show</h1>
+          <img src={logo} alt="Photo of Brandon Doe" class="profile-image" />
+          <h1 class="tag name">Hello, I’m Brandon.</h1>
+          {/* <p class="tag location">My home is Kansas City, Missouri.</p> */}
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          {/* <h1 className="App-title">Welcome to the Show</h1> */}
         </header>
+
+
         <p className="App-intro">
           Hello I am <code>Brandon VanCamp</code>. I like to ...
           <br/>

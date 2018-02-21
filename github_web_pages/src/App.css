@@ -9,7 +9,7 @@
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: white;
 }
@@ -126,16 +126,18 @@ input {
   width: 100%;
 }
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   body {
     padding-top: 2em;
-  }
-  .photo-container li {
-    margin: auto;
-  }
-}
+  } */
 
-@media only screen and (min-width: 768px) {
+/* .photo-container li {
+  margin: auto;
+} */
+
+/* } */
+
+/* @media only screen and (min-width: 768px) {
   body {
     padding-top: 4em;
   }
@@ -151,4 +153,43 @@ input {
     margin: 10px;
     width: 100px;
   }
+} */
+
+header {
+  text-align: center;
+  /* background: url('images/codingBG.jpeg') no-repeat top center; */
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
+header {
+  line-height: 1.5;
+}
+
+header .profile-image {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 6px double #ff8811;
+  transition: all .5s;
+}
+
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+.tag {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+}
+
+.location {
+  background-color: #222;
+  color: yellow;
 }
