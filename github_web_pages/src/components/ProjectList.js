@@ -52,7 +52,7 @@ const ProjectList = (props) => (
           React Router Dom was used to handle all of the routing, and keeping the DOM in sync.
         </p>
         <ul>
-        <li><a href="https://github.com/brandonv98/React_Flickr_Gallery" target="_blank" class="social github">Github</a></li>
+        <li><a href="https://github.com/brandonv98/React_Flickr_Gallery" target="_blank" className="social github">Github</a></li>
       </ul>
       </div>
     </Col>
@@ -76,7 +76,7 @@ const ProjectList = (props) => (
           But we decided to refactor it more dynamically with ReactJS.
         </p>
         <ul>
-          <li><a href="https://github.com/brandonv98/Employee_Directory_v2.1" target="_blank" class="social github">Github</a></li>
+          <li><a href="https://github.com/brandonv98/Employee_Directory_v2.1" target="_blank" className="social github">Github</a></li>
         </ul>
     </div>
     </Col>
@@ -103,7 +103,7 @@ const ProjectList = (props) => (
          CSS used for layout & styling. SVG for all icons. Git for version control, and tracking changes in project files.
          GitHub to post/share it to the world! </p>
          <ul>
-         <li><a href="https://github.com/brandonv98/web-app-dashboard" target="_blank" class="social github">Github</a></li>
+         <li><a href="https://github.com/brandonv98/web-app-dashboard" target="_blank" className="social github">Github</a></li>
        </ul>
         </div>
 
@@ -129,7 +129,7 @@ const ProjectList = (props) => (
           Also we check to see if the game is currently still in play or if the user has lost.
           All this is done with JavaScript.</p>
           <ul>
-          <li><a href="https://github.com/brandonv98/Game_Show_App" target="_blank" class="social github">Github</a></li>
+          <li><a href="https://github.com/brandonv98/Game_Show_App" target="_blank" className="social github">Github</a></li>
         </ul>
       </div>
     </Col>

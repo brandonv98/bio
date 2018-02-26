@@ -40,9 +40,9 @@ export default class Home extends Component {
             <Panel.Body>Build For The Web, Web designer/developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bringing people together, and collaborate about new ideas
           </Panel.Body>
           <ul>
-            <li><a href="https://github.com/brandonv98" target="_blank" class="social github">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" target="_blank" class="social linkedin">Linkedin</a></li>
-            <li><a href="https://twitter.com/brandondvancamp/" target="_blank" class="social twitter">Linkedin</a></li>
+            <li><a href="https://github.com/brandonv98" target="_blank" className="social github">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" target="_blank" className="social linkedin">Linkedin</a></li>
+            <li><a href="https://twitter.com/brandondvancamp/" target="_blank" className="social twitter">Linkedin</a></li>
           </ul>
         </Jumbotron>
 
