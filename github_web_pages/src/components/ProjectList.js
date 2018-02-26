@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Dependencies
-import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image, Panel, bsStyle } from 'react-bootstrap';
+import { Grid, Col, Row, Image } from 'react-bootstrap';
 
 // Images
 import bluecrushqc from '../project_images/bluecrushqc_full_Desktop.png';
@@ -16,12 +16,7 @@ import FlikrProject from '../project_images/flikr_project/flikr_project.png';
 import FlikrProjectNoResults from '../project_images/flikr_project/No-Results-Layout.png';
 import EmployeeDir from '../project_images/employee_directory/employee_directory.png';
 import EmployeeOverlay from '../project_images/employee_directory/employee_overlay.png';
-import Anytime from '../project_images/anytime.png';
-import MonsonSnG from '../project_images/MonsonSnG.png';
-import PoppinSomeTags from '../project_images/poppin_some_tags.png';
-import ELM from '../project_images/ELM_Repair/ELMHome.png';
-import Portfolio from '../project_images/portfolio.png';
-import BestCity from '../project_images/best--city.png';
+
 
 const ProjectList = (props) => (
   <Grid>
@@ -52,7 +47,7 @@ const ProjectList = (props) => (
           React Router Dom was used to handle all of the routing, and keeping the DOM in sync.
         </p>
         <ul>
-        <li><a href="https://github.com/brandonv98/React_Flickr_Gallery" target="_blank" className="social github">Github</a></li>
+        <li><a href="https://github.com/brandonv98/React_Flickr_Gallery" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
       </ul>
       </div>
     </Col>
@@ -76,7 +71,7 @@ const ProjectList = (props) => (
           But we decided to refactor it more dynamically with ReactJS.
         </p>
         <ul>
-          <li><a href="https://github.com/brandonv98/Employee_Directory_v2.1" target="_blank" className="social github">Github</a></li>
+          <li><a href="https://github.com/brandonv98/Employee_Directory_v2.1" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
         </ul>
     </div>
     </Col>
@@ -103,7 +98,7 @@ const ProjectList = (props) => (
          CSS used for layout & styling. SVG for all icons. Git for version control, and tracking changes in project files.
          GitHub to post/share it to the world! </p>
          <ul>
-         <li><a href="https://github.com/brandonv98/web-app-dashboard" target="_blank" className="social github">Github</a></li>
+         <li><a href="https://github.com/brandonv98/web-app-dashboard" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
        </ul>
         </div>
 
@@ -129,7 +124,7 @@ const ProjectList = (props) => (
           Also we check to see if the game is currently still in play or if the user has lost.
           All this is done with JavaScript.</p>
           <ul>
-          <li><a href="https://github.com/brandonv98/Game_Show_App" target="_blank" className="social github">Github</a></li>
+          <li><a href="https://github.com/brandonv98/Game_Show_App" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
         </ul>
       </div>
     </Col>
