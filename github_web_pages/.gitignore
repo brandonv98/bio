@@ -22,3 +22,10 @@ yarn-error.log*
 
 #config files
 config.js
+
+#unused code
+unusedCode.js
+/src/components/home
+/src/components/Nav.js
+/src/data
+/src/device_mockups

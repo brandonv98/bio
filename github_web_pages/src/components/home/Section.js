@@ -1,13 +1,17 @@
 import React from 'react';
+import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image, Panel, bsStyle } from 'react-bootstrap';
 
 const Section = (props) => (
-  <li className="course media group">
-      <img className="course-img" src={props.img} alt="course" />
-      <div>
-        <h3>{props.title}</h3>
-        <p>{props.desc}</p>
-      </div>
-    </li>
+    <Row className="show-grid">
+        <Col md={6} mdPush={6}>
+          <code>Blue Crush QC</code>
+          <Image src={props.img} thumbnail />
+        </Col>
+        {/* <Col md={6} mdPull={6}>
+          <code>Blue Crush QC</code>
+          <Image src={props.img} thumbnail />
+        </Col> */}
+      </Row>
   );
 
 export default Section;

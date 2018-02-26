@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'; // Bunch of BS CSS...
+import './App.css';
 import './index.css'; // Not BS CSS, the good stuff...
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';

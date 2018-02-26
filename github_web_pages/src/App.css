@@ -23,12 +23,66 @@
   font-size: large;
 }
 
+.jumbotron {
+  /* background-image: url('./img/background.jpg'); */
+}
+
+.tag {
+  opacity: .7;
+}
+
+.btn-primary {
+  background-color: #70bbe3;
+}
+
+.panel, .jumbotron {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("./img/bg-pattern.png"), #7b4397;
+  background: url("./img/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: url("./img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+}
+
+code {}
+
+footer .bg-primary {
+  background: #fdcc52;
+  background: -webkit-linear-gradient(#fdcc52, #fdc539);
+  background: linear-gradient(#fdcc52, #fdc539);
+}
+
+footer ul {
+  margin: 1em 0;
+}
+
+/* Divice */
+
+header.masthead .device-container {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header.masthead .device-container .screen img {
+  border-radius: 3px;
+}
+
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: initial;
   }
   to {
-    transform: rotate(360deg);
+    /* transform: rotate(360deg); */
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    transition-delay: initial;
   }
 }
 
@@ -193,4 +247,137 @@ header .profile-image:hover {
 .location {
   background-color: #222;
   color: yellow;
+}
+
+footer ul li, .jumbotron ul li {
+  display: inline-block;
+}
+
+.jumbotron {
+  padding-top: 5em;
+}
+
+button a {
+  color: #fff;
+  /* border: 2px solid black; */
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 1;
+  transition: all .5s;
+}
+
+a.twitter {
+  background-image: url(img/twitter.svg);
+}
+
+a.linkedin {
+  background-image: url(img/linkedin.svg);
+}
+
+a.github {
+  background-image: url(img/github.svg);
+}
+
+a.social:hover {
+  opacity: .5;
+}
+
+.img-thumbnail {
+  max-height: 45em;
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card:hover {
+  border-color: #ff99ff;
+}
+
+.card h3 {
+  padding: .7em;
+}
+
+.card h2 {
+  border-bottom: 2px solid #ccc;
+  color: #969696;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+.skills li.html, .skills li.rrd {
+  background: #ff0000;
+}
+
+.skills li.css {
+  background: #0399ff;
+}
+
+.skills li.api {
+  background: #8821c4;
+}
+
+.skills li.php {
+  background: gray;
+}
+
+.skills li.other {
+  background: #e62aed;
+}
+
+.skills li.react {
+  background: skyblue;
+}
+
+.skills li.github {
+  background: black;
+}
+
+.skills li.svg {
+  background: #5ee0c2;
+}
+
+.skills li.git {
+  background: #3bdb55;
+}
+
+.skills li.js {
+  background: #ff9904;
+}
+
+.divider {
+  border-top: 2px solid lightgray;
+  display: inline-block;
+  width: 50%;
+  margin: 1em 0;
 }

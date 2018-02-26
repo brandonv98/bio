@@ -3,13 +3,18 @@ import React from 'react';
 
 const Footer = (props) => (
 
-    <footer>
-      <ul>
-        <li><a href='#'> GitHub </a></li>
-        <li><a href='#'> Facebook </a></li>
-        <li><a href='#Work'> Linkedin </a></li>
-      </ul>
-    </footer>
+  <footer>
+    <span className="divider" />
+    <p>Let's work togather!</p>
+    <a className="btn btn-primary" href="mailto:brandon@overtimewebdev.com">Contact Brandon</a>
+
+    <ul>
+      <li><a href="https://github.com/brandonv98" target="_blank" class="social github">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" target="_blank" class="social linkedin">Linkedin</a></li>
+      <li><a href="https://twitter.com/brandondvancamp/" target="_blank" class="social twitter">Linkedin</a></li>
+    </ul>
+    <p class="copyright">Copyright 2018, Brandon V</p>
+  </footer>
   );
 
 

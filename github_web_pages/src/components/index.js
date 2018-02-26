@@ -2,68 +2,55 @@ import React, { Component } from 'react';
 import logo from '../logo.png';
 //Components
 import {
-  HomePage
-} from '../data/homePage';
+  BrowserRouter,
+  Route,
+  Switch,
+} from 'react-router-dom';
 
-// Bootstrap
-import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image } from 'react-bootstrap';
+// Components
+import ProjectList from './ProjectList';
+import Footer from './Footer';
+import Nav from './Nav';
 
 
+// Bootstrap lib
+import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image, Panel, bsStyle } from 'react-bootstrap';
 
 export default class Home extends Component {
+
+  constructor(props) {
+   super(props);
+   this.state =
+   {
+     isLoading: false
+   };
+ }
 
 
   render() {
     return (
 
       <div className="App">
+
         <Jumbotron>
           <img src={logo} alt="Photo of Brandon Doe" className="App-logo" />
-          <h1 class="tag name">Hello, I’m Brandon.</h1>
-          <p>
-            This is a simple hero unit, a simple jumbotron-style component for calling
-            extra attention to featured content or information.
-          </p>
-          <p>
-            <Button bsStyle="primary">Learn more</Button>
-          </p>
-        </Jumbotron>;
-        {/* <header className="App-header">
-          <img src={logo} alt="Photo of Brandon Doe" class="profile-image" />
-          <h1 class="tag name">Hello, I’m Brandon.</h1>
-          {/* <p class="tag location">My home is Kansas City, Missouri.</p> */}
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
-          {/* <h1 className="App-title">Welcome to the Show</h1> */}
-        {/* </header> */}
+           <Panel.Heading>
+             <Panel.Title componentClass="h3">Hello, im Brandon</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body>Build For The Web, Web designer/developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bringing people together, and collaborate about new ideas
+          </Panel.Body>
+          <ul>
+            <li><a href="https://github.com/brandonv98" target="_blank" class="social github">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" target="_blank" class="social linkedin">Linkedin</a></li>
+            <li><a href="https://twitter.com/brandondvancamp/" target="_blank" class="social twitter">Linkedin</a></li>
+          </ul>
+        </Jumbotron>
 
+        {/* <Route path='/' component={Nav} /> */}
 
-        <p className="App-intro">
-          Hello I am <code>Brandon VanCamp</code>. I like to ...
-          <br/>
-            <br/>
-        <p>Please <a href='#'>Contact Me</a> if you would like to collaborate togather.</p>
-        </p>
+         <ProjectList />
 
-        {/* <div> */}
-
-        {/* </div> */}
-
-
-        {/* line seperator */}
-        <p>------------------------------------------------------------------</p>
-
-        <h1>Let's collaborate on a project togather</h1>
-        <a href='#'><span> GitHub </span></a>
-        <a href='#'><span> Facebook </span></a>
-        <a href='#'><span> Linkedin </span></a>
-
-
-        {/* footer */}
-
-        {/* <Route path={`/`}
-          render={ () => <CourseContainer data={HTMLCourses} /> }
-        /> */}
-
+        <Footer />
 
       </div>
     );
