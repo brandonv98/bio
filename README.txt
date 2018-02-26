@@ -1,1 +1,1 @@
-## Developed in React, with BS.
+##SDeveloped in React, with BS.
