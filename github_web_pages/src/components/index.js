@@ -28,7 +28,7 @@ export default class Home extends Component {
         <Jumbotron>
           <img src={logo} alt="My logo" className="App-logo" />
            <Panel.Heading>
-             <Panel.Title componentClass="h3">Hello, im Brandon</Panel.Title>
+             <Panel.Title componentClass="h3">Hello, I'm Brandon</Panel.Title>
             </Panel.Heading>
             <Panel.Body>Build For The Web, Web designer/developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bringing people together, and collaborate about new ideas
           </Panel.Body>

@@ -39,10 +39,10 @@ const ProjectList = (props) => (
           <li className="rrd">React Router Dom</li>
           <li className="github">GitHub</li>
         </ul>
-        <p>Ohhhh ReactJS, now let me tell you about this project.
+        <p>Ooh ReactJS, now let me tell you about this project.
           First we get a connecting with our API,
           parse the information and store it in an array. For this i used axios.
-          Next we create seprate components for organization.
+          Next we create separate components for organization.
           Now we can loop threw our data and append it onto the screen.
           React Router Dom was used to handle all of the routing, and keeping the DOM in sync.
         </p>
