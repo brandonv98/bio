@@ -1,13 +1,16 @@
 export const HomePage = [
   {
-    title:"WORKING WITH US",
-    description:"We deliver web page types developed from HTML markup, CSS stylesheets for styling and unobtrusive JavaScript for feature detection, poly-fills and behaviors.",
+    title:"Flikr API Gallery",
     img_src: require("../project_images/bluecrushqc_full_Desktop.png"),
+    skills: ['Javascript', 'ReactJS', 'JSX', 'API', 'CSS', 'HTML', 'Git', 'React Router Dom', 'GitHub'],
+    description: "Ooh ReactJS, now let me tell you about this project. First we get a connecting with our API,  parse the information and store it in an array. For this i used axios. Next we create separate components for organization.  Now we can loop threw our data and append it onto the screen. React Router Dom was used to handle all of the routing, and keeping the DOM in sync.",
+    project_link: "",
     id: "js-1"
   },
   {
-    title:"BUILD SMART",
+    title:"Employee Directory Search",
     description:"Testing no longer means attempting to make a website look the same in browsers of different capabilities or on devices with different size screens. It does mean ensuring that a person’s experience of a design should be appropriate to the capabilities of a browser or device.",
+    skills: ['JS', 'ReactJS'],
     img_src: require("../project_images/anytime.png"),
     id: "js-2"
   },

@@ -5,6 +5,10 @@ import logo from '../logo.png';
 import ProjectList from './ProjectList';
 import Footer from './Footer';
 import Container from './home/Container';
+import {
+  HomePage
+} from '../data/homePage';
+
 
 // Bootstrap lib
 import { Jumbotron, Panel } from 'react-bootstrap';
@@ -41,7 +45,7 @@ export default class Home extends Component {
 
          <ProjectList />
 
-         <Container />
+         <Container data={HomePage}/>
 
         <Footer />
 
