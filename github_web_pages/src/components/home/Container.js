@@ -4,8 +4,8 @@ import Section from './Section';
 const Container = (props) => {
   let overview = props.data.map((section) => {
     return <Section
-             // title={}
-             // desc={course.description}
+             title={section.title}
+             desc={section.description}
              img={section.img_src}
              key={section.id} />
   });

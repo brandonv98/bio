@@ -4,7 +4,7 @@ import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image,
 const Section = (props) => (
     <Row className="show-grid">
         <Col md={6} mdPush={6}>
-          <code>Blue Crush QC</code>
+          <code>{props.desc}</code>
           <Image src={props.img} thumbnail />
         </Col>
         {/* <Col md={6} mdPull={6}>
