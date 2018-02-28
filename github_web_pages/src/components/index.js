@@ -6,7 +6,7 @@ import ProjectList from './ProjectList';
 import Footer from './Footer';
 import Container from './home/Container';
 import {
-  HomePage
+  ProjectsData
 } from '../data/homePage';
 
 
@@ -43,9 +43,9 @@ export default class Home extends Component {
           </ul>
         </Jumbotron>
 
-         <ProjectList />
+         {/* <ProjectList /> */}
 
-         <Container data={HomePage}/>
+         <Container data={ProjectsData}/>
 
         <Footer />
 

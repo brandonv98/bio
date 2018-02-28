@@ -335,11 +335,11 @@ ul.skills {
   background: #0399ff;
 }
 
-.skills li.html, .skills li.rrd {
+.skills li.html, .skills li.react-router-dom, .skills li.search, .skills li.dns {
   background: #ff0000;
 }
 
-.skills li.css {
+.skills li.css, .skills li.sass {
   background: #0399ff;
 }
 
@@ -347,15 +347,15 @@ ul.skills {
   background: #8821c4;
 }
 
-.skills li.php {
+.skills li.php, .skills li.wordpress {
   background: gray;
 }
 
-.skills li.other {
+.skills li.other, .skills li.strip, .skills li.sketch, .skills li.wix {
   background: #e62aed;
 }
 
-.skills li.react {
+.skills li.reactjs {
   background: skyblue;
 }
 
@@ -371,7 +371,7 @@ ul.skills {
   background: #3bdb55;
 }
 
-.skills li.js {
+.skills li.javascript, .skills li.jsx, .skills li.d3js {
   background: #ff9904;
 }
 
