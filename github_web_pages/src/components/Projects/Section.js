@@ -1,11 +1,6 @@
 import React from 'react';
-import {Col, Image } from 'react-bootstrap';
-// Dependencies
-import {
-  NavLink,
-  Link,
-} from 'react-router-dom';
-
+import {Col, Image } from 'react-bootstrap'; //// Dependencies : BS, RRD
+import {NavLink, Link } from 'react-router-dom'; // ^^
 const Section = (props) => {
   return(
         <Col md={6}>
@@ -26,14 +21,12 @@ const Section = (props) => {
             </p>
             <ul>
               {
-                (props.doesExist)
+                (props.doesExist) // Link
                 ? <li><Link to={`https://github.com/brandonv98/${props.project_link_github}`} rel="noreferrer noopener" target="_blank" className="social github">Github</Link></li>
                 : <li></li>
               }
             </ul>
           </div>
-        </Col>
-  );
+        </Col>);
 }
-
 export default Section;

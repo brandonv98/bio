@@ -1,18 +1,7 @@
 import React from 'react';
-
-// Dependances
- import {
-  Route,
-  NavLink
-} from 'react-router-dom';
-
- // Bootstrap lib
- import {Nav, Row, Col, Jumbotron, Panel, Grid } from 'react-bootstrap';
-// lib
-import logo from './logo.png';
-
-
-
+import {Route, NavLink} from 'react-router-dom';// Dependances are : RRD, Bootstrap
+import {Nav, Row, Col, Jumbotron, Panel, Grid } from 'react-bootstrap'; // ^^
+import logo from './logo.png'; //// lib : Logo
 const Head = (props) => {
   return (
       <div>
@@ -29,7 +18,6 @@ const Head = (props) => {
             <li><a href="https://twitter.com/brandondvancamp/" target="_blank" rel="noreferrer noopener" className="social twitter">Linkedin</a></li>
           </ul>
         </Jumbotron>
-
           <Grid>
              <Row className="show-grid">
               <Col md={12}>
@@ -40,8 +28,6 @@ const Head = (props) => {
               </Col>
             </Row>
           </Grid>
-      </div>
-  );
+      </div>);
 }
-
 export default Head;

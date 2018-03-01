@@ -9,7 +9,4 @@ const NotFound = (props) => (
 		<p>Try returning back to Bio</p>
   </li>
 );
-
-
-
 export default NotFound;
