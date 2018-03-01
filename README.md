@@ -14,8 +14,8 @@ facebook / create-react-app react-scripts 1.1.1
 ```
 ## How to view this project
 **To view this Project:**
-- (Make sure you have 'create-react-app' downloaded on your computer.)
-    *https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html*
+- (Make sure you have 'create-react-app' downloaded on your computer).
+*https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html*
 - **You must have nodeJS installed on your computer.** *https://nodejs.org/*
 
 > **Live Demo Found Here :** [Live Demo of Bio Page](https://brandonv98.github.io/bio/).
