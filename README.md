@@ -1,4 +1,4 @@
-# Developed in **React**.
+# **Project Bio**. Developed in ReactJS.
 
 **Dependencies defined in this project**
 ```
@@ -14,7 +14,7 @@ facebook / create-react-app react-scripts 1.1.1
 ```
 ## How to view this project
 **To view this Project:**
-(Make sure you have 'create-react-app' downloaded on your computer.)
+### (Make sure you have 'create-react-app' downloaded on your computer.)
  *https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html*
 - **You must have nodeJS installed on your computer.** *https://nodejs.org/*
 
@@ -34,13 +34,14 @@ in your terminal to run the project.
 ## Learn More..
 -  About the **API** used in this project, can be found at  *https://api.github.com/*
 - Panel content and data can be found in `root/src/data/Projects.js`.
-1) **Quick Documentation Links**
-2) **Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
-3) **React Chartjs 2** *https://github.com/jerairrest/react-chartjs-2*
-4) **Axios** *https://github.com/axios/axios*
-5) **React Router Dom** *https://reacttraining.com/react-router/web/guides/philosophy*
-6) **ReactJS** *https://reactjs.org/docs/hello-world.html*
-7) **GitHub API** *https://api.github.com/*
+> **Quick Documentation Links**
+1) **Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
+2) **React Chartjs 2** *https://github.com/jerairrest/react-chartjs-2*
+3) **Axios** *https://github.com/axios/axios*
+4) **React Router Dom** *https://reacttraining.com/react-router/web/guides/philosophy*
+5) **ReactJS** *https://reactjs.org/docs/hello-world.html*
+6) **GitHub API** *https://api.github.com/*
+
 
 ## Errors & Problems
 If you have any questions/issues or just want to chat id love to here from you **[Brandon](brandon@overtimewebdev.com)**.
