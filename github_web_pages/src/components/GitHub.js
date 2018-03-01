@@ -130,7 +130,7 @@ export default class GitHub extends Component {
         <Row className="show-grid">
           <Col md={12}>
             <h3>More Stats For &#8628;</h3>
-            <h1>{this.state.gitRepoData.name}</h1>
+            <h4><b>{this.state.gitRepoData.name}</b></h4>
             <p><b>Project description</b> : {this.state.gitRepoData.description}</p>
           </Col>
           <Col md={4}>
@@ -161,8 +161,8 @@ export default class GitHub extends Component {
           <Col md={12}>
             <HorizontalBar
               data={commitData}
-              width={120}
-              height={10} />
+              width={100}
+              height={30} />
           </Col>
         </Row>
       </Grid>
