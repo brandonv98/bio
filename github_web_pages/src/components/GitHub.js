@@ -1,23 +1,22 @@
 import React, { Component } from 'react';
 
 //Dependances
-import {
+import { // BS
   Row,
   Col,
-  Nav
+  Nav,
+  Grid
 } from 'react-bootstrap';
-import {
-	NavLink
+import { // RRD
+	NavLink,
 } from 'react-router-dom';
-import axios from 'axios';
-import {
+import axios from 'axios'; // API Connection
+import { // Charts for data
   Doughnut,
   Bar,
-  defaults,
   HorizontalBar,
-  Line
 } from 'react-chartjs-2';
-import ForkRepo from '../repo-forked.svg';
+import ForkRepo from '../img/repo-forked.svg'; // svg fork logo
 
 
 export default class GitHub extends Component {
@@ -26,80 +25,59 @@ export default class GitHub extends Component {
    super(props);
    this.state =
    {
-    gitData: [],
-    gitRepoData: [],
-     isLoading: false,
-     username: 'brandonv98',
-     owner: 'brandonv98',
-     repo: this.props.match.params.repo,
-     forkLink: '',
+    gitData: [], // Languages data
+    gitRepoData: [], // Repo Data
+     owner: 'brandonv98', // username of the repo
+     repo: this.props.match.params.repo, // for selected repo
+     forkLink: '', // Fork link
    };
  }
 
   componentDidMount() {
-    console.log(this.props.match.params.repo);
-    const username = 'brandonv98';
     const owner = this.state.owner;
-    let forkLink = this.state.gitRepoData.clone_url;
     let repo = this.state.repo;
-    this.preformSearchData(username, owner, repo);
-    this.preformSearchRepo(owner, repo);
+    this.preformSearchData(owner, repo);
     console.log(this.refs.chart.chart_instance); // returns a Chart.js instance reference
   }
-
   ////////////////////////////
  //API Connection
  // more information found here : https://github.com/axios/axios
-  preformSearchData = (username, owner, repo) => {
+  preformSearchData = (owner, repo) => {
     // Make a request for a user with a given ID
-    // let url = '/users/:username/repos';
-    // let url =  '/repos/${owner}/${repo}/stats/contributors';
     axios.get(`https://api.github.com/repos/${owner}/${repo}/languages`)
       .then(response => {
         this.setState({
           gitData: response.data, //Photo's Array Data
-          // resaultsTitle: query, // Results Title
-          // isLoading: false, // Oviii :)
         });
       })
       .catch(error => {
         console.log('Error fetching and parsing the data', error);
       });
+      // Make a request for a user with a given ID
+      axios.get(`https://api.github.com/repos/${owner}/${repo}`)
+        .then(response => {
+          this.setState({
+            gitRepoData: response.data, //Photo's Array Data
+            forkLink: response.data.clone_url,
+          });
+        })
+        .catch(error => {
+          console.log('Error fetching and parsing the data', error);
+        });
   }
-////////\\\\\\\\\\/////////\\\\\\\\\\\///////\\\\\\\\////////\\\\\\
-  preformSearchRepo = (owner, repo) => {
-  // Make a request for a user with a given ID
-  // let url = '/users/:username/repos';
-  // let url =  '/repos/${owner}/${repo}/stats/contributors';
-  // "https://api.github.com/repos/brandonv98/bio" add this
-  //https://api.github.com/repos/brandonv98/${repo}/commits
-  axios.get(`https://api.github.com/repos/${owner}/${repo}`)
-    .then(response => {
-      this.setState({
-        gitRepoData: response.data, //Photo's Array Data
-        forkLink: response.data.clone_url,
-        // resaultsTitle: query, // Results Title
-        // isLoading: false, // Oviii :)
-      });
-    })
-    .catch(error => {
-      console.log('Error fetching and parsing the data', error);
-    });
-}
 
-///////////////////////
-///
+/// Take all languages data and get the percent used of each one.
   findPercents = (number) => {
     const repoLang = this.state.gitData;
     const total = repoLang.CSS + repoLang.JavaScript + repoLang.HTML
     let percent = (number / total) * 100;
     return percent;
   }
-////////////////////////////////////////////////////////////
-//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// //////////////////////////////////////////////////////////
+// \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
   render() {
-    const repo = this.state.gitData;
-    console.log(this.state.gitRepoData.created_at);
+    const repoLangs = this.state.gitData;
     const langData = {
       labels: ['JavaScript', 'CSS', 'HTML'],
       datasets: [
@@ -110,9 +88,9 @@ export default class GitHub extends Component {
           borderWidth: 1,
           hoverBackgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)' ],
         hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)' ],
-          data: [this.findPercents(repo.JavaScript),
-                this.findPercents(repo.CSS),
-                this.findPercents(repo.HTML)],
+          data: [this.findPercents(repoLangs.JavaScript),
+                this.findPercents(repoLangs.CSS),
+                this.findPercents(repoLangs.HTML)],
         }
       ]
     };
@@ -130,24 +108,22 @@ export default class GitHub extends Component {
       }
     ]
   };
-    console.log(this.state.gitRepoData.clone_url, this.props);
     return (
-      <div>
+        <Grid>
         <Row className="show-grid">
-              <Col md={12}>
-                <Nav className='main-nav'>
-                    <li>
-                      <NavLink className='return-arrow' to={`/bio`}>&#8617; Return</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={`${this.state.forkLink}`}>Fork Project
-                        <span><img src={ForkRepo} alt="My logo" className="octicon" /></span>
-                      </NavLink>
-                    </li>
-                </Nav>
-              </Col>
-            </Row>
-
+          <Col md={12}>
+            <Nav className='main-nav'>
+                <li>
+                  <NavLink className='return-arrow' to={`/bio`}>&#8617; Return</NavLink>
+                </li>
+                <li>
+                  <NavLink to={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
+                    <span><img src={ForkRepo} alt="My logo" className="octicon" /></span>
+                  </NavLink>
+                </li>
+            </Nav>
+          </Col>
+        </Row>
         <Row className="show-grid">
           <Col md={12}>
             <h3>More Stats For &#8628;</h3>
@@ -160,36 +136,33 @@ export default class GitHub extends Component {
             <p><b>Last Updated</b> : {this.state.gitRepoData.updated_at}</p>
           </Col>
         </Row>
+
+        {/* Grids */}
         <Row className="show-grid">
           <Col md={6}>
             <Bar
               data={langData}
-              width={110}
+              width={100}
               height={50}
-              options={{
-                maintainAspectRatio: true
-               }}
-          />
+              />
           </Col>
           <Col md={6}>
-            <Doughnut ref='chart' data={langData}
-              width={120}
+            <Doughnut
+              ref='chart'
+              data={langData}
+              width={100}
               height={50} />
           </Col>
         </Row>
-
         <Row className="show-grid">
           <Col md={12}>
             <HorizontalBar
               data={commitData}
-              width={100}
-                height={10} />
-          </Col>
-          <Col md={6}>
-
+              width={120}
+              height={10} />
           </Col>
         </Row>
-      </div>
+      </Grid>
     );
   }
 }

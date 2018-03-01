@@ -3,7 +3,6 @@
 }
 
 .App-logo {
-  /* animation: App-logo-spin infinite 20s linear; */
   height: 180px;
   border-radius: 100%;
 }
@@ -21,10 +20,6 @@
 
 .App-intro {
   font-size: large;
-}
-
-.jumbotron {
-  /* background-image: url('./img/background.jpg'); */
 }
 
 .tag {
@@ -55,8 +50,6 @@ footer .bg-primary {
 footer ul {
   margin: 1em 0;
 }
-
-/* Other App Styles undecided if i want to use this... or maybe one from a dif project... hmm...*/
 
 body {
   text-align: center;
@@ -199,7 +192,6 @@ footer ul li, .jumbotron ul li {
 
 button a {
   color: #fff;
-  /* border: 2px solid black; */
 }
 
 a.social {
@@ -364,15 +356,4 @@ ul.skills {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
-}
-
-/* FADE */
-
-.example-appear {
-  opacity: 0.01;
-}
-
-.example-appear.example-appear-active {
-  opacity: 1;
-  transition: opacity .5s ease-in;
 }

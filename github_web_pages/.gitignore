@@ -26,7 +26,4 @@ config.js
 #unused code
 /src/glyphicons
 unusedCode.js
-/src/components/home
-/src/components/Nav.js
 /src/data
-/src/device_mockups
