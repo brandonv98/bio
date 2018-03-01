@@ -32,7 +32,7 @@ to install the dependencies.
 in your terminal to run the project.
                                                   
 ## Learn More..
-> About the **API** used in this project *https://api.github.com/*
+-  About the **API** used in this project, can be found at  *https://api.github.com/*
 - Panel content and data can be found in `root/src/data/Projects.js`.
 1) **Quick Documentation Links**
 2) **Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
@@ -42,7 +42,7 @@ in your terminal to run the project.
 6) **ReactJS** *https://reactjs.org/docs/hello-world.html*
 7) **GitHub API** *https://api.github.com/*
 
-## Errors and Problems
+## Errors & Problems
 If you have any questions/issues or just want to chat id love to here from you **[Brandon](brandon@overtimewebdev.com)**.
 
 **Developers**
