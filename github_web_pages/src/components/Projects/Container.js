@@ -2,7 +2,8 @@ import React from 'react';
 import Section from './Section';
 import Skills from './Skills';
 import {
-  Row
+  Row,
+  Grid
  } from 'react-bootstrap';
 
 const Container = (props) => {
@@ -28,11 +29,11 @@ let dataA = props.data;
   });
   return (
 
-      <div>
+      <Grid>
         <Row className="show-grid">
             {overview}
         </Row>
-      </div>
+      </Grid>
   );
 }
 
