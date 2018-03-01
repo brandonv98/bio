@@ -1,17 +1,17 @@
 
-# Developed in **React**, with **BS**.
+# Developed in **React**.
 
 
-# Dependencies defined in this project
-twbs / bootstrap    ^ 4.0.0
-chartjs / Chart.js chart.js     ^ 2.7.1
-tschaub / gh-pages      ^ 1.1.0
-facebook / react    ^ 16.2.0
-react-bootstrap / react-bootstrap       ^ 0.32.1
-jerairrest / react-chartjs-2       ^ 2.7.0
-facebook / react react-dom      ^ 16.2.0
-ReactTraining / react-router react-router-dom       ^ 4.2.2
-facebook / create-react-app react-scripts       1.1.1
+**Dependencies defined in this project**
+1)twbs / bootstrap    ^ 4.0.0
+2)chartjs / Chart.js chart.js     ^ 2.7.1
+3)tschaub / gh-pages      ^ 1.1.0
+4)facebook / react    ^ 16.2.0
+5)react-bootstrap / react-bootstrap       ^ 0.32.1
+6)jerairrest / react-chartjs-2       ^ 2.7.0
+7)facebook / react react-dom      ^ 16.2.0
+8)ReactTraining / react-router react-router-dom       ^ 4.2.2
+9)facebook / create-react-app react-scripts       1.1.1
 
 
 # How to view this project
@@ -35,22 +35,14 @@ in your terminal to run the project.
                                                   
 # Learn more
 About the **API** used in this project *https://api.github.com/*
-Panel content can be found in data folder.
-**Quick Documentation Links**
-**Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
-**React Chartjs 2** *https://github.com/jerairrest/react-chartjs-2*
-**Axios** *https://github.com/axios/axios*
-**React Router Dom** *https://reacttraining.com/react-router/web/guides/philosophy*
-**ReactJS** *https://reactjs.org/docs/hello-world.html*
-**GitHub API** *https://api.github.com/*
-
+Panel content and data can be found in `root/src/data/Projects.js`.
+1) **Quick Documentation Links**
+2) **Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
+3) **React Chartjs 2** *https://github.com/jerairrest/react-chartjs-2*
+4) **Axios** *https://github.com/axios/axios*
+5) **React Router Dom** *https://reacttraining.com/react-router/web/guides/philosophy*
+6) **ReactJS** *https://reactjs.org/docs/hello-world.html*
+7) **GitHub API** *https://api.github.com/*
 
 ## Errors and Problems
 If you have any questions/issues or just want to chat please contact **brandon@overtimewebdev.com**.
-
-1)
-
-
-                                                                                                                                    
-                                                                                                                                                
-
