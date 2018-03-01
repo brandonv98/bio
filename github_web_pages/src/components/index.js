@@ -6,7 +6,7 @@ import {
 } from '../data/Projects'; // local DB
 
 import Head from './Header/Head'; // Header
-import Container from './home/Container'; // Home page
+import Container from './Projects/Container'; // Home page
 import GitHub from './GitHub'; // github API
 import Footer from './Footer';
 // Dependencies
@@ -32,7 +32,7 @@ export default class Home extends Component {
             <Route component={NotFound} />
         </Switch>
 
-        <Route path='/' component={Footer} /> 
+        <Route path='/' component={Footer} />
       </div>
     );
   }
