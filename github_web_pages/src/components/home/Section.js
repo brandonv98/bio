@@ -1,15 +1,21 @@
 import React from 'react';
-import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image, Panel, bsStyle } from 'react-bootstrap';
+import {Col, Image } from 'react-bootstrap';
+// Dependencies
+import {
+  NavLink,
+  Link,
+  Route
+} from 'react-router-dom';
+import GitHub from '../GitHub';
+
 //skill Component
 // import Skills from './Skills';
 
 const Section = (props) => {
-    console.log(props.img_src_next);
-      // <Skills skill={props.skills} />
   return(
         <Col md={6}>
           <div className="card">
-            <h2>{props.title}</h2>
+            <h2><NavLink to={`/${props.project_link_github}/github`}>{props.title}</NavLink></h2>
             <Image src={props.img} thumbnail />
             <Image src={props.img_next} thumbnail />
             <h3>Skills</h3>
@@ -22,10 +28,11 @@ const Section = (props) => {
             <ul>
               {
                 (props.doesExist)
-                ? <li><a href={props.project_link} rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
+                ? <li><Link to={`https://github.com/brandonv98/${props.project_link_github}`} rel="noreferrer noopener" target="_blank" className="social github">Github</Link></li>
                 : <li></li>
               }
             </ul>
+            {/* <Route path='/bio/:more' component={GitHub} /> */}
           </div>
         </Col>
   );

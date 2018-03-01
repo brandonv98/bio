@@ -24,6 +24,7 @@ yarn-error.log*
 config.js
 
 #unused code
+/src/glyphicons
 unusedCode.js
 /src/components/home
 /src/components/Nav.js

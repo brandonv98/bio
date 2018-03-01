@@ -1,17 +1,31 @@
 import React, { Component } from 'react';
 import logo from '../logo.png';
 
+
 // Components
-import ProjectList from './ProjectList';
 import Footer from './Footer';
 import Container from './home/Container';
+// import LoadingNpm from './LoadingNpm';
 import {
   ProjectsData
-} from '../data/homePage';
-
+} from '../data/homePage'; // local DB
+import TodoList from './fadeIn';
+import GitHub from './GitHub';
 
 // Bootstrap lib
-import { Jumbotron, Panel } from 'react-bootstrap';
+import {Nav, Row, Col, Jumbotron, Panel, Glyphicon, Grid } from 'react-bootstrap';
+
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+
+
+// Dependencies
+import {
+  Route,
+  NavLink
+} from 'react-router-dom';
+import ForkRepo from '../repo-forked.svg';
+
 
 export default class Home extends Component {
 
@@ -19,22 +33,24 @@ export default class Home extends Component {
    super(props);
    this.state =
    {
-     isLoading: false,
+    // gitData: [],
+    isViewingRepo: this.props.location.pathname,
+    isLoading: false,
    };
  }
 
 
+
   render() {
+    console.log(this.props)
     return (
-
       <div className="App">
-
         <Jumbotron>
           <img src={logo} alt="My logo" className="App-logo" />
            <Panel.Heading>
              <Panel.Title componentClass="h3">Hello, I'm Brandon</Panel.Title>
             </Panel.Heading>
-            <Panel.Body>Build For The Web, Web designer/developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bringing people together, and collaborate about new ideas
+            <Panel.Body>Web designer/developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bringing people together, and collaborate about new ideas
           </Panel.Body>
           <ul>
             <li><a href="https://github.com/brandonv98" target="_blank" rel="noreferrer noopener" className="social github">Github</a></li>
@@ -43,12 +59,23 @@ export default class Home extends Component {
           </ul>
         </Jumbotron>
 
-         {/* <ProjectList /> */}
+          {/* <Grid> */}
+             <Row className="show-grid">
+              <Col md={12}>
+                <Nav className='main-nav'>
+                  <Route path='/' render={() =>
+                    <li><NavLink to={`/bio`}>Bio</NavLink></li> }/>
+                </Nav>
+              </Col>
+            </Row>
 
-         <Container data={ProjectsData}/>
 
-        <Footer />
-
+          <Route path='/' component={TodoList} />
+          <Route path='/:repo/github' component={GitHub} />
+          <Route path='/bio' render={() =>
+              <Container data={ProjectsData}/> }/>
+          <Route path='/' component={Footer} />
+        {/* </Grid> */}
       </div>
     );
   }

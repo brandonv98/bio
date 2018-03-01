@@ -1,7 +1,9 @@
 import React from 'react';
 import Section from './Section';
 import Skills from './Skills';
-import { Grid, Jumbotron, FormGroup, FormControl, Button, Form, Col, Row, Image, Panel, bsStyle } from 'react-bootstrap';
+import {
+  Row
+ } from 'react-bootstrap';
 
 const Container = (props) => {
 
@@ -10,7 +12,7 @@ let dataA = props.data;
     let skillData = section.skills;
      let skills = skillData.map(skill => {
         // console.log(skill);
-        return <Skills skill={skill}/>
+        return <Skills skill={skill} key={skill}/>
      });
      // console.log(section);
     return <Section
@@ -19,12 +21,11 @@ let dataA = props.data;
        img={section.img_src}
        skills={skills}
        desc={section.description}
-       doesExist={section.project_link}
-       project_link={section.project_link}
+       doesExist={section.project_link_github}
+       project_link_github={section.project_link_github}
+       link_src={section.link_src}
        key={section.id} />
   });
-  console.log(overview);
-
   return (
 
       <div>

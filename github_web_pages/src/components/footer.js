@@ -13,7 +13,7 @@ const Footer = (props) => (
       <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" rel="noreferrer noopener" target="_blank" className="social linkedin">Linkedin</a></li>
       <li><a href="https://twitter.com/brandondvancamp/" rel="noreferrer noopener" target="_blank" className="social twitter">Linkedin</a></li>
     </ul>
-    <p className="copyright">Copyright 2018, Brandon V</p>
+    <p className="copyright">	&#169; Copyright 2018, Brandon VanCamp</p>
   </footer>
   );
 
