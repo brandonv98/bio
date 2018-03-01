@@ -6,16 +6,19 @@ import { // BS
   Col,
   Nav,
   Grid
-} from 'react-bootstrap';
+} from 'react-bootstrap'; // Documentation found at : https://react-bootstrap.github.io/getting-started/introduction/
 import { // RRD
 	NavLink,
 } from 'react-router-dom';
 import axios from 'axios'; // API Connection
+// React Chartjs 2
+// Learn more at:  https://github.com/jerairrest/react-chartjs-2
 import { // Charts for data
   Doughnut,
   Bar,
   HorizontalBar,
 } from 'react-chartjs-2';
+// Lear more at : https://octicons.github.com/
 import ForkRepo from '../img/repo-forked.svg'; // svg fork logo
 
 
