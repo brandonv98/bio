@@ -20,7 +20,7 @@ facebook / create-react-app react-scripts       1.1.1
 *https://nodejs.org/*
 
 > **Live Demo Found Here :** *https://brandonv98.github.io/bio/*
-This site was built using [GitHub Pages](https://pages.github.com/).
+- This site was built using [GitHub Pages](https://pages.github.com/).
 
 1) Open up your terminal and change directories to the downloaded project file 'github_web_pages'
                                                   
@@ -34,7 +34,7 @@ in your terminal to run the project.
                                                   
 ## Learn more
 > About the **API** used in this project *https://api.github.com/*
-> Panel content and data can be found in `root/src/data/Projects.js`.
+Panel content and data can be found in `root/src/data/Projects.js`.
 1) **Quick Documentation Links**
 2) **Bootstrap** *https://react-bootstrap.github.io/getting-started/introduction/*
 3) **React Chartjs 2** *https://github.com/jerairrest/react-chartjs-2*
