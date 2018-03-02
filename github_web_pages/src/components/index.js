@@ -22,7 +22,7 @@ export default class Home extends Component {
           <Head />
           <Switch> {/* SWITCH */}
             <Route path='/:repo/github' component={GitHub} />
-            <Route path='/bio' render={() =>
+            <Route exact path='/' render={() =>
                 <Container data={ProjectsData}/> }/>
             <Route component={NotFound} />
         </Switch>

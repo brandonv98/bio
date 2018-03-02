@@ -90,7 +90,7 @@ export default class GitHub extends Component {
           <Col md={12}>
             <Nav className='main-nav'>
                 <li>
-                  <NavLink className='return-arrow' to={`/bio`}>&#8617; Return</NavLink>
+                  <NavLink className='return-arrow' to={`/`}>&#8617; Return</NavLink>
                 </li>
                 <li>
                   <NavLink to={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
@@ -108,6 +108,7 @@ export default class GitHub extends Component {
           </Col>
           <Col md={4}>
             <p><b>Developed By</b> : Brandon V</p>
+            {/* // tryed to do login but GH wont let you display that i guess..  If you know a fix for this, i would love to hear from you :)*/}
             <p><b>Created on</b> : {this.state.gitRepoData.created_at} &#8628;</p>
             <p><b>Last Updated</b> : {this.state.gitRepoData.updated_at}</p>
           </Col>
