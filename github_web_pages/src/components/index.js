@@ -12,7 +12,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-// Not Found Pagte
+// Not Found Page
 import NotFound from './404Error/NotFound';
 export default class Home extends Component {
   render() {
