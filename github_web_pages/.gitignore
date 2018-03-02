@@ -25,5 +25,3 @@ config.js
 
 #unused code
 /src/glyphicons
-unusedCode.js
-#/src/data/Projects.js
