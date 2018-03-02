@@ -23,14 +23,14 @@ facebook / create-react-app react-scripts 1.1.1
 
 1) Open up your terminal and change directories to the downloaded project folder 'github_web_pages'
 - github_web_pages is the root directory
-`cd github_web_pages/`
+    `cd github_web_pages/`
                                                   
 2) In the root directory type the following in your terminal
-`npm install`
+    `npm install`
 to install the dependencies.
                                                   
 3) Once install is completed. Type
-`npm start`
+    `npm start`
 in your terminal to run the project & start a local server.
 
 4) To stop the local server, in your terminal  use (CMD + C) or on **Windows** (Control + C).
