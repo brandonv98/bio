@@ -21,7 +21,7 @@ facebook / create-react-app react-scripts 1.1.1
 > **Live Demo Found Here :** [Live Demo of Bio Page](https://brandonv98.github.io/bio/).
 - This site was built using [GitHub Pages](https://pages.github.com/).
 
-1) Open up your terminal and hange directories to the downloaded project file 'github_web_pages'
+1) Open up your terminal and change directories to the downloaded project file 'github_web_pages'
                                                   
 2) If nothing shows up, stop your terminal (CMD + C) or on **Windows** (Control + C), then type
 `npm install`
