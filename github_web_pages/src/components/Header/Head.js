@@ -23,7 +23,7 @@ const Head = (props) => {
               <Col md={12}>
                 <Nav className='main-nav'>
                   <Route path='/' render={() =>
-                    <li><NavLink to={`/`}>Bio</NavLink></li> }/>
+                    <li><NavLink to={`/bio`}>Bio</NavLink></li> }/>
                 </Nav>
               </Col>
             </Row>
