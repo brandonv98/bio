@@ -90,7 +90,7 @@ export default class GitHub extends Component {
           <Col md={12}>
             <Nav className='main-nav'>
                 <li>
-                  <NavLink className='return-arrow' to={`/`}>&#8617; Return</NavLink>
+                  <NavLink className='return-arrow' to={`/bio`}>&#8617; Return</NavLink>
                 </li>
                 <li>
                   <NavLink to={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
