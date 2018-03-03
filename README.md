@@ -18,7 +18,7 @@ facebook / create-react-app react-scripts 1.1.1
  *https://reactjs.org/blog/2016/07/22/create-apps-with-no-configuration.html*
 - **You must have nodeJS installed on your computer.** *https://nodejs.org/*
 
-> **Live Demo Found Here :** [Live Demo of Bio Page](https://brandonv98.github.io).
+> **Live Demo Found Here :** [Live Demo of Bio Page](https://brandonv98.github.io/bio).
 - This site was built using [GitHub Pages](https://pages.github.com/).
 
 1) Open up your terminal and change directories to the downloaded project folder 'github_web_pages'
