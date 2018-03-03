@@ -21,7 +21,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://brandonv98.github.io",
+  "homepage": "http://brandonv98.github.io/",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }
