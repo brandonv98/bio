@@ -108,7 +108,7 @@ export default class GitHub extends Component {
           </Col>
           <Col md={4}>
             <p><b>Developed By</b> : Brandon V</p>
-            {/* // tryed to do login but GH wont let you display that i guess..  If you know a fix for this, i would love to hear from you :)*/}
+            {/* // tryed to do $incomingdata}.login but GH wont let you display that i guess..  If you know a fix for this, i would love to hear from you :)*/}
             <p><b>Created on</b> : {this.state.gitRepoData.created_at} &#8628;</p>
             <p><b>Last Updated</b> : {this.state.gitRepoData.updated_at}</p>
           </Col>
