@@ -25,3 +25,5 @@ config.js
 
 #unused code
 /src/glyphicons
+#ignore CNAME
+/public/CNAME

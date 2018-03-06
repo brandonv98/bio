@@ -14,6 +14,7 @@ export default class GitHub extends Component {
      owner: 'brandonv98', // username of the repo
      repo: this.props.match.params.repo, // for selected repo
      forkLink: '', // Fork link
+     repoName: '',
    };
  }
   componentDidMount() {
@@ -40,6 +41,7 @@ export default class GitHub extends Component {
           this.setState({
             gitRepoData: response.data, //Git Repo Data
             forkLink: response.data.clone_url, // fork link for repo
+            repoName: response.data.name, // Name of the repo
           });
         })
         .catch(error => {
@@ -52,7 +54,12 @@ export default class GitHub extends Component {
     let percent = (number / total) * 100; // Find the percent used of each languag
     return percent;
   }
+  handleRepoNameUnderScores = (title) => { //  Delete the under scores _ for the repo name
+    const delUnderScores = title.replace( /_/g, ' ');
+    return delUnderScores;
+  }
   render() { // RENDER()
+
     const repoLangs = this.state.gitData;
     const langData = { // charts for languages
       labels: ['JavaScript', 'CSS', 'HTML'], // Should make these dynamic
@@ -103,7 +110,7 @@ export default class GitHub extends Component {
         <Row className="show-grid">
           <Col md={12}>
             <h3>More Stats For &#8628;</h3>
-            <h4><b>{this.state.gitRepoData.name}</b></h4>
+            <h4><b>{this.handleRepoNameUnderScores(this.state.repoName)}</b></h4>
             <p><b>Project description</b> : {this.state.gitRepoData.description}</p>
           </Col>
           <Col md={4}>
