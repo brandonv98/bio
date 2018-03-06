@@ -55,12 +55,11 @@ export default class GitHub extends Component {
     return percent;
   }
   handleRepoNameUnderScores = (title) => { //  Delete the under scores _ for the repo name
-    const delUnderScores = title.replace( /_/g, ' ');
+    const delUnderScores = title.replace( /_/g, ' '); // remove all "_"(underscores) and return with " "(space).
     return delUnderScores;
   }
   render() { // RENDER()
-
-    const repoLangs = this.state.gitData;
+    const repoLangs = this.state.gitData; // repo lang data
     const langData = { // charts for languages
       labels: ['JavaScript', 'CSS', 'HTML'], // Should make these dynamic
       datasets: [
@@ -115,7 +114,6 @@ export default class GitHub extends Component {
           </Col>
           <Col md={4}>
             <p><b>Developed By</b> : Brandon V</p>
-            {/* // tryed to do $incomingdata}.login but GH wont let you display that i guess..  If you know a fix for this, i would love to hear from you :)*/}
             <p><b>Created on</b> : {this.state.gitRepoData.created_at} &#8628;</p>
             <p><b>Last Updated</b> : {this.state.gitRepoData.updated_at}</p>
           </Col>
