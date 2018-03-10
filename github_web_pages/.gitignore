@@ -27,3 +27,6 @@ config.js
 /src/glyphicons
 #ignore CNAME
 /public/CNAME
+
+#DataBase
+/src/data
