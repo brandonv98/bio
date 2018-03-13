@@ -1,6 +1,5 @@
-export const ProjectsData = [
-  {
-    title:"Flikr API Gallery",
+export const ProjectsData = [{
+    title: "Flikr API Gallery",
     // img_src: require(['../project_images/flikr_project/No-Results-Layout.png', require('../project_images/flikr_project/flikr_project.png']),
     img_src: require('../project_images/flikr_project/No-Results-Layout.png'),
     img_src_next: require('../project_images/flikr_project/flikr_project.png'),
@@ -11,25 +10,25 @@ export const ProjectsData = [
     id: "js-1"
   },
   {
-    title:"Employee Directory Search",
+    title: "Employee Directory Search",
     img_src: require("../project_images/employee_directory/employee_directory.png"),
     img_src_next: require("../project_images/employee_directory/employee_overlay.png"),
-    skills: ['ReactJS', 'JavaScript', 'CSS', 'JSX', 'API', 'React-Router-Dom', 'Git', 'GitHub' ],
+    skills: ['ReactJS', 'JavaScript', 'CSS', 'JSX', 'API', 'React-Router-Dom', 'Git', 'GitHub'],
     description: "This project was originaly done static, with HTML, CSS & JS. However we decided to refactor it more dynamically with ReactJS.",
     project_link_github: "Employee_Directory_v2.1",
     id: "js-2"
   },
   {
-    title:"Analytics Dashboard",
+    title: "Analytics Dashboard",
     img_src: require('../project_images/analytics/dashboard.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
-    skills: [ 'D3js', 'HTML', 'CSS', 'JavaScript', 'SVG', 'Git', 'GitHub' ],
+    skills: ['D3js', 'HTML', 'CSS', 'JavaScript', 'SVG', 'Git', 'GitHub'],
     description: "D3.js was the clear choice to use for this dashboard to create all of the data and graphs. JavaScript to deliver user click events, user navigation, and handle popups/alerts. Example: When a user clicks on there notification, they will get a popup about there notifications. CSS was used for layout and styling.  SVG was the tool selected to create all icons.  Git was used for version control and to track changes in project files.  Finally, GitHub was selected for posting/sharing to the world",
     project_link_github: "web-app-dashboard",
     id: "js-3"
   },
   {
-    title:"Wheel Of Success",
+    title: "Wheel Of Success",
     img_src: require('../project_images/word_guessing/inGame.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
     skills: ['Javascript', 'SVG', 'CSS', 'HTML', 'Git', 'GitHub'],
@@ -38,25 +37,25 @@ export const ProjectsData = [
     id: "js-4"
   },
   {
-    title:"Blue Crush QC",
+    title: "Blue Crush QC",
     img_src: require('../project_images/bluecrushqc_full_Desktop.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
-    skills: [ 'HTML', 'CSS', 'Javascript', 'PHP', 'WordPress', 'Search Engine Optimization'],
+    skills: ['HTML', 'CSS', 'Javascript', 'PHP', 'WordPress', 'Search Engine Optimization'],
     description: "Project was for a local bussiness, specializing in tanning, massage therapy, and beauty. Used JavaScript to handle the slideshow. CSS to make everything nice and cute. HTML for the initial structure. WordPress, and PHP for the new feed, as well for the backend.",
     project_link_github: "",
     id: "js-5"
   },
   {
-    title:"Sketch Template",
+    title: "Sketch Template",
     img_src: require('../project_images/j3.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
-    skills: [ 'Sketch', 'HTML', 'SVG', 'CSS', 'JavaScript', 'jQuery', 'BootStrap'],
+    skills: ['Sketch', 'HTML', 'SVG', 'CSS', 'JavaScript', 'jQuery', 'BootStrap'],
     description: "Developed with Sketch. Then brought to life with HTML, CSS, and JavaScript. Most of the CSS used was from BootStrap. SVG's used for footer icons. JavaScript & jQuery handled all the functionality with the slideshow and image overlay's.",
     project_link_github: "",
     id: "js-6"
   },
   {
-    title:"goode words",
+    title: "goode words",
     img_src: require('../project_images/goodewords.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
     skills: ['WordPress', 'Strip', 'HTML', 'SASS', 'JavaScript', 'PHP', 'Search Engine Optimization'],
@@ -65,7 +64,7 @@ export const ProjectsData = [
     id: "js-7"
   },
   {
-    title:"Tuff Girl Fit Wear",
+    title: "Tuff Girl Fit Wear",
     img_src: require('../project_images/tuff_girl.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
     skills: ['WIX', 'API', 'Communication', 'DNS Linking', 'Explicit Documentation', 'JSON'],
@@ -74,7 +73,7 @@ export const ProjectsData = [
     id: "js-8"
   },
   {
-    title:"Monson Towing",
+    title: "Monson Towing",
     img_src: require('../project_images/towing.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
     skills: ['ReactJS', 'API', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization'],
@@ -83,7 +82,7 @@ export const ProjectsData = [
     id: "js-9"
   },
   {
-    title:"Fat Bat Pipes",
+    title: "Fat Bat Pipes",
     img_src: require('../project_images/fatbatpipes.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
     skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization'],
