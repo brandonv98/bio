@@ -1,9 +1,15 @@
 import React from 'react';
-import {Col, Image } from 'react-bootstrap'; //// Dependencies : BS, RRD
-import {NavLink, Link } from 'react-router-dom'; // ^^
+import {
+  Col,
+  Image
+} from 'react-bootstrap'; //// Dependencies : BS, RRD
+import {
+  NavLink,
+  Link
+} from 'react-router-dom'; // ^^
 const Section = (props) => {
-  return(
-        <Col md={6}>
+  return (
+    <Col md={6}>
           <div className="card">
               { // Does have link to github?
                 (props.project_link_github)
