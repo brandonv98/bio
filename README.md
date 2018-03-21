@@ -50,5 +50,5 @@ in your terminal to run the project & start a local server.
 ## Errors & Problems
 If you have any questions/issues or just want to chat id love to here from you **[Brandon](brandon@overtimewebdev.com)**.
 
-[Contribution for this project](CONTRIBUTING.md)
+[Contributors for this project](CONTRIBUTORS.md)
 
