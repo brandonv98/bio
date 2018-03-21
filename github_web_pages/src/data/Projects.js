@@ -46,6 +46,15 @@ export const ProjectsData = [{
     id: "js-5"
   },
   {
+    title: "Random Quote Generator",
+    img_src: require('../project_images/brandonv98.github.io_Random_Quote_Generator_.png'),
+    // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
+    skills: ['JavaScript', 'HTML', 'CSS', 'Git', 'GitHub'],
+    description: "",
+    project_link_github: "Random_Quote_Generator",
+    id: "js-10"
+  },
+  {
     title: "Sketch Template",
     img_src: require('../project_images/j3.png'),
     // img_src_next: require('../project_images/flikr_project/flikr_project.png'),
@@ -89,5 +98,5 @@ export const ProjectsData = [{
     description: "",
     project_link_github: "",
     id: "js-10"
-  },
+  }
 ];
