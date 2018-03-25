@@ -4,14 +4,15 @@ import Skills from './Skills';
 import {
   Row,
   Grid
- } from 'react-bootstrap';
+} from 'react-bootstrap';
 const Container = (props) => {
-let dataA = props.data;
+  let dataA = props.data;
   let overview = dataA.map((section) => {
+    // section.skills.map((skill) => skill={skill} === skill && Object.assign(skill, skill))
     let skillData = section.skills;
-     let skills = skillData.map(skill => {
-        return <Skills skill={skill} key={skill}/>
-     });
+    let skills = skillData.map(skill => {
+      return <Skills skill={skill} key={skill}/>
+    });
     return <Section
        title={section.title}
        img_next={section.img_src_next}
@@ -24,7 +25,7 @@ let dataA = props.data;
        key={section.id} />
   });
   return (
-      <Grid>
+    <Grid>
         <Row className="show-grid">
             {overview}
         </Row>
