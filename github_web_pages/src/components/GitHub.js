@@ -113,7 +113,7 @@ export default class GitHub extends Component {
                 </li>
                 <li>
                   <NavLink to={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
-                    <span><img src={ForkRepo} alt="My logo" className="octicon" /></span>
+                    <span><img src={ForkRepo} alt="forked gh icon" className="octicon" /></span>
                   </NavLink>
                 </li>
             </Nav>

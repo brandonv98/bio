@@ -134,17 +134,27 @@ input {
 
 .main-nav a {
   display: block;
-  /* background: #5ffafd; */
   border: 1px solid tomato;
   border-radius: 20px;
   padding: 1px;
   color: #616161;
   font-weight: bolder;
+  opacity: 1;
 }
 
 .main-nav .active, .main-nav a:hover, .search-form button:hover {
   color: #fff;
   background: tomato;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .4;
+  transition: opacity .5s ease-in;
+}
+
+a>span {
+  padding-left: 10px;
 }
 
 header {
@@ -318,20 +328,15 @@ ul.skills {
   margin: 1em 0;
 }
 
-.return-arrow {
-  color: lightgray;
-  justify-content: flex-start;
+a.return-arrow {
+  color: #fff;
   border: 3px solid tomato;
-  border-radius: 100%;
+  background-color: tomato;
   font-size: 1.1em;
-  opacity: 1;
 }
 
 .return-arrow:hover {
   color: lightgray;
-  opacity: .4;
-  text-decoration: none;
-  transition: opacity .5s ease-in;
 }
 
 @media only screen and (min-width: 768px) {
