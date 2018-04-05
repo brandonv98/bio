@@ -116,7 +116,15 @@ export default class GitHub extends Component {
                     <span><img src={ForkRepo} alt="forked gh icon" className="octicon" /></span>
                   </NavLink>
                 </li>
+
             </Nav>
+						<Nav className='main-nav'>
+							<li>
+								<NavLink to={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo
+									{/* <span><img src={ForkRepo} alt="forked gh icon" className="octicon" /></span> */}
+								</NavLink>
+							</li>
+						</Nav>
           </Col>
         </Row>
         <Row className="show-grid">
