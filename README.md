@@ -1,4 +1,5 @@
 # **Project Bio**. Developed in ReactJS.
+(https://github.com/jonschlinkert/sublime-markdown-extended) [![package control total downloads](https://img.shields.io/packagecontrol/dt/Markdown%20Extended.svg?style=flat-square)](https://packagecontrol.io/packages/Markdown%20Extended/)
 
 **Dependencies defined in this project**
 ```
@@ -51,4 +52,3 @@ in your terminal to run the project & start a local server.
 If you have any questions/issues or just want to chat id love to here from you **[Brandon](brandon@overtimewebdev.com)**.
 
 [Contributors for this project](CONTRIBUTORS.md)
-
