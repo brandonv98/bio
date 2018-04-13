@@ -1,5 +1,5 @@
 # **Project Bio**. Developed in ReactJS.
-[![package control license](https://img.shields.io/packagecontrol/dt/Markdown%20Extended.svg?style=flat-square)](license.txt)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) 
 
 **Dependencies defined in this project**
 ```
