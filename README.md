@@ -1,5 +1,5 @@
 # **Project Bio**. Developed in ReactJS.
-(https://github.com/jonschlinkert/sublime-markdown-extended) [![package control total downloads](https://img.shields.io/packagecontrol/dt/Markdown%20Extended.svg?style=flat-square)](https://packagecontrol.io/packages/Markdown%20Extended/)
+[![package control license](https://img.shields.io/packagecontrol/dt/Markdown%20Extended.svg?style=flat-square)](license.txt)
 
 **Dependencies defined in this project**
 ```
