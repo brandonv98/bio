@@ -1,5 +1,5 @@
 # **Project Bio**. Developed in ReactJS.
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE.md) 
+[![GitHub license](https://img.shields.io/badge/license-GNU-blue.svg)](LICENSE) 
 
 **Dependencies defined in this project**
 ```
