@@ -8,7 +8,6 @@ import {
 const Container = (props) => {
 	let dataA = props.data;
 	let overview = dataA.map((section, i) => {
-		// section.skills.map((skill) => skill={skill} === skill && Object.assign(skill, skill))
 		let skillData = section.skills;
 		let skills = skillData.map(skill => {
 			return <Skills skill={skill} key={skill}/>
