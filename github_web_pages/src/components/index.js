@@ -6,7 +6,7 @@ import {
   ProjectsData
 } from '../data/Projects'; // local DB
 import Head from './Header/Head'; // Header
-import Container from './Projects/Container'; // Home page
+import Container from './modules/Container'; // Home page
 import GitHub from './GitHub'; // github API
 import Footer from './Footer';
 // Dependencies
