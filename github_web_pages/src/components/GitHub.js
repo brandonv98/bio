@@ -33,7 +33,7 @@ export default class GitHub extends Component {
 		const owner = this.state.owner;
 		let repo = this.state.repo;
 		this.preformSearchData(owner, repo); // API State
-		console.log(this.refs.chart.chart_instance); // returns a Chart.js instance reference
+		// console.log(this.refs.chart.chart_instance); // returns a Chart.js instance reference
 	}
 	//API Connection || More information found here : https://github.com/axios/axios
 	preformSearchData = (owner, repo) => {
@@ -121,7 +121,6 @@ export default class GitHub extends Component {
 						<Nav className='main-nav'>
 							<li>
 								<NavLink to={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo
-									{/* <span><img src={ForkRepo} alt="forked gh icon" className="octicon" /></span> */}
 								</NavLink>
 							</li>
 						</Nav>
