@@ -18,7 +18,7 @@ import {
 import NotFound from './404Error/NotFound';
 export default class Home extends Component {
   render() {
-    console.log('Looking for the sourse code? Just send me a email for it! Brandon@overtimewebdev.com :)');
+    console.log('Looking for the sourse code? Just send me a email for it! Brandon@csdevs.io :)');
     return (
       <div className="App">
           <Head />
