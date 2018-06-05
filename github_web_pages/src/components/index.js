@@ -3,12 +3,14 @@ import React, {
 } from 'react';
 // Components lib
 import {
-  ProjectsData
+  ProjectsData,
 } from '../data/Projects'; // local DB
-import Head from './Header/Head'; // Header
-import Container from './modules/Container'; // Home page
-import GitHub from './GitHub'; // github API
-import Footer from './Footer';
+// import brandonvancamp2 from '../data/brandonvancamp2'; // local DB
+// import Head from './Header/Head'; // Header
+// import Container from './modules/Container'; // Home page
+// import GitHub from './GitHub'; // github API
+// import Footer from './Footer';
+import { Head, Container, GitHub, Footer, Badges} from './modules';
 // Dependencies
 import {
   Route,
@@ -19,11 +21,14 @@ import NotFound from './404Error/NotFound';
 export default class Home extends Component {
   render() {
     console.log('Looking for the sourse code? Just send me a email for it! Brandon@csdevs.io :)');
+    // console.log(brandonvancamp2);
+    console.log(ProjectsData);
     return (
       <div className="App">
           <Head />
           <Switch> {/* SWITCH */}
             <Route path='/:repo/github' component={GitHub} />
+            <Route path='/:badge/badges' component={Badges} />
             <Route path='/bio' render={() =>
                 <Container data={ProjectsData}/> }/>
             <Route component={NotFound} />
