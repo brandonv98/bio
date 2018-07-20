@@ -22,7 +22,7 @@ export default class Home extends Component {
   render() {
     console.log('Looking for the sourse code? Just send me a email for it! Brandon@csdevs.io :)');
     // console.log(brandonvancamp2);
-    console.log(ProjectsData);
+    // console.log(ProjectsData);
     return (
       <div className="App">
           <Head />
