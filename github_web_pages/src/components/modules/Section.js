@@ -16,9 +16,15 @@ const Section = (props) => {
                 ? <h2><NavLink to={`/${props.project_link_github}/github`}>{props.title}</NavLink></h2>
                 : <h2>{props.title}</h2>
               }
-            <Image src={props.img} thumbnail />
-            <Image src={props.img_next} thumbnail />
-            <h3>Skills</h3>
+            {
+              (props.project_link_github) 
+              ? <div><NavLink to={`/${props.project_link_github}/github`}><Image src={props.img} thumbnail /></NavLink>
+                <NavLink to={`/${props.project_link_github}/github`}><Image src={props.img_next} thumbnail /></NavLink>
+                </div>
+              : <div><Image src={props.img} thumbnail />
+                <Image src={props.img_next} thumbnail /></div>
+            }
+            <h3 className="skills--header">Skills</h3>
             <ul className="skills">
               {props.skills}
             </ul>

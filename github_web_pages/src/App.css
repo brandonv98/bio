@@ -262,6 +262,7 @@ a.social:hover {
 ul.skills {
   padding: 0;
   text-align: center;
+  padding-top: 5px;
 }
 
 .skills li {
@@ -361,4 +362,8 @@ a.return-arrow {
   display: inline-block;
   vertical-align: text-top;
   fill: currentColor;
+}
+
+h3.skills--header {
+  border-bottom: 1px solid lightgray;
 }
