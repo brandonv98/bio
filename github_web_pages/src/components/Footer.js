@@ -2,7 +2,7 @@ import React from 'react';
 const Footer = (props) => ( // Footer
 	<footer>
     <span className="divider" />
-    <p>Let's work togather!</p>
+    <p>Let's work together!</p>
     <a className="btn btn-primary" href="mailto:brandon@csdevs.io">Contact Brandon</a>
     <ul>
       <li><a href="https://github.com/brandonv98" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>

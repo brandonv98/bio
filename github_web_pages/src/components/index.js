@@ -20,7 +20,7 @@ import {
 import NotFound from './404Error/NotFound';
 export default class Home extends Component {
   render() {
-    console.log('Looking for the sourse code? Just send me a email for it! Brandon@csdevs.io :)');
+    console.log('Looking for the source code? Just send me a email for it! Brandon@csdevs.io :)');
     // console.log(brandonvancamp2);
     // console.log(ProjectsData);
     return (
