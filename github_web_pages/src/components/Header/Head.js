@@ -6,7 +6,7 @@ const Head = (props) => {
   return (
       <div>
         <Jumbotron>
-          <img src={logo} alt="My logo" className="App-logo" />
+          <img src={logo} alt="BitMe emoji" className="App-logo" />
            <Panel.Heading>
              <Panel.Title componentClass="h3">Hello, I'm Brandon</Panel.Title>
             </Panel.Heading>
