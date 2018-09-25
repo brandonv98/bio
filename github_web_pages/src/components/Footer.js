@@ -1,7 +1,9 @@
 import React from 'react';
+import footerLogo from './../img/footer-logo.png'; //// lib : Logo
 const Footer = (props) => ( // Footer
 	<footer>
     <span className="divider" />
+    <img src={footerLogo} alt="Main logo" className="App-logo-footer" />
     <p>Let's work together!</p>
     <a className="btn btn-primary" href="mailto:brandon@csdevs.io">Contact Brandon</a>
     <ul>
