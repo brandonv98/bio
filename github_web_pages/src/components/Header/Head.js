@@ -10,7 +10,7 @@ const Head = (props) => {
            <Panel.Heading>
              <Panel.Title componentClass="h3">Hello, I'm Brandon</Panel.Title>
             </Panel.Heading>
-            <Panel.Body>Full Stack Developer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bring people together, and collaborate about new ideas.
+            <Panel.Body>Full Stack Engineer, problem solver. Team player. Tech enthusiast, and life long learner. Love to bring people together, and collaborate about new ideas.
           </Panel.Body>
           <ul>
             <li><a href="https://github.com/brandonv98" target="_blank" rel="noreferrer noopener" className="social github">Github</a></li>
