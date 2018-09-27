@@ -14,6 +14,7 @@ import {
 	Nav,
 	Grid
 } from 'react-bootstrap';
+import axios from 'axios'; // ^^
 // Dependencies
 // import {
 //   Route,
@@ -21,12 +22,41 @@ import {
 // } from 'react-router-dom';
 // Not Found Page
 export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      badges: [],
+      points: []
+    };
+  }
+  componentDidMount() {
+    this.preformSearchData();
+  }
+  	//API Connection || More information found here : https://github.com/axios/axios
+	preformSearchData = () => {
+		// Make a request for a user with a given ID
+		axios.get(`https://teamtreehouse.com/brandonvancamp2.json`)
+			.then(response => {
+        console.log(response);
+				this.setState({
+          badges: response.data,
+          points: response.data.points
+				});
+			})
+			.catch(error => {
+				console.log('Error fetching and parsing the data', error);
+      });
+    }
+
+
+
   render() {
-    console.log(brandonvancamp2);
-    console.log(brandonvancamp2.badges['150'].icon_url);
+    console.log(this.state.points);
+    // console.log(brandonvancamp2);
+    // console.log(brandonvancamp2.badges['150'].icon_url);
     const iconImg = brandonvancamp2.badges['150'].icon_url;
-    const jsPoints = brandonvancamp2.points.JavaScript;
-    const total = brandonvancamp2.points.total;
+    const jsPoints = this.state.points.JavaScript;
+    const total = this.state.points.total;
     const langData = { // charts for languages
 			labels: ['JavaScript', 'Total', 'HTML'], // Should make these dynamic
 			datasets: [{
@@ -45,7 +75,7 @@ export default class Home extends Component {
     return (
       <div className="App">
 
-        <img src={iconImg} />
+        {/* <img src={iconImg} /> */}
         <p>{jsPoints}</p>
         <Col md={6}>
             <Bar
