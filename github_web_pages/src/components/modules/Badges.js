@@ -75,26 +75,28 @@ export default class Home extends Component {
       }]
 		};
     return (
-      <div className="App">
-
-        <Col md={6}>
-          <Doughnut
-            ref='chart'
-            data={langData}
-            width={100}
-            height={50} 
-          />
-        </Col>
-
-        {/* <img src={iconImg} /> */}
-        {/* <p>{jsPoints}</p> */}
-        <Col md={6}>
-            <Bar
+      <Grid>
+        <Row className="show-grid">
+          <Col md={6}>
+            <Doughnut
+              ref='chart'
               data={langData}
               width={100}
-              height={50}
-              />
+              height={50} 
+            />
           </Col>
-      </div>);
+
+          {/* <img src={iconImg} /> */}
+          {/* <p>{jsPoints}</p> */}
+          <Col md={6}>
+              <Bar
+                data={langData}
+                width={100}
+                height={50}
+                />
+            </Col>
+        </Row>
+      </Grid>
+    );
   }
 }
