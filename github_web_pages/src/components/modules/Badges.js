@@ -15,6 +15,8 @@ import {
 	Grid
 } from 'react-bootstrap';
 import axios from 'axios'; // ^^
+// import PostCardCSS from './../../PostCard.css';
+
 // Dependencies
 // import {
 //   Route,
@@ -114,7 +116,7 @@ export default class Home extends Component {
             </Col>
         </Row>
 
-        <Row>
+        {/* <Row>
           <ul className="content-block-list">
             <li className="grid-50 tablet-grid-50">
               <div className="content-block">
@@ -134,7 +136,7 @@ export default class Home extends Component {
               </div>
             </li>
           </ul>
-        </Row>
+        </Row> */}
         
       </Grid>
     );
