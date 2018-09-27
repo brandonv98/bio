@@ -52,9 +52,7 @@ export default class Home extends Component {
 
   render() {
     console.log(this.state.points);
-    // console.log(brandonvancamp2);
-    // console.log(brandonvancamp2.badges['150'].icon_url);
-    // const iconImg = brandonvancamp2.badges['150'].icon_url;
+    
     const jsPoints = this.state.points.JavaScript;
     const total = this.state.points.total;
     const langData = { // charts for languages
