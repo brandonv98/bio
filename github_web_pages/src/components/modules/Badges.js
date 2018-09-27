@@ -52,17 +52,17 @@ export default class Home extends Component {
 
   render() {
     console.log(this.state.points);
-    
+
     const jsPoints = this.state.points.JavaScript;
     const total = this.state.points.total;
     const langData = { // charts for languages
 			labels: ['JavaScript', 'HTML', 'CSS', 'Total'], // Should make these dynamic
 			datasets: [{
 				label: ' SKILL CAP ',
-				backgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
+				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
 				borderColor: 'rgba(255,99,132,1)',
 				borderWidth: 1,
-				hoverBackgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+				hoverBackgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
 				hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
         data: [jsPoints, 
               this.state.points.HTML,
