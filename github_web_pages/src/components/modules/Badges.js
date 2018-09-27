@@ -54,19 +54,23 @@ export default class Home extends Component {
     console.log(this.state.points);
     // console.log(brandonvancamp2);
     // console.log(brandonvancamp2.badges['150'].icon_url);
-    const iconImg = brandonvancamp2.badges['150'].icon_url;
+    // const iconImg = brandonvancamp2.badges['150'].icon_url;
     const jsPoints = this.state.points.JavaScript;
     const total = this.state.points.total;
     const langData = { // charts for languages
-			labels: ['JavaScript', 'Total', 'HTML'], // Should make these dynamic
+			labels: ['JavaScript', 'HTML', 'CSS', 'Total'], // Should make these dynamic
 			datasets: [{
-				label: 'Languages used in Percents for ',
+				label: ' SKILL CAP ',
 				backgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
 				borderColor: 'rgba(255,99,132,1)',
 				borderWidth: 1,
 				hoverBackgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
 				hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
-				data: [jsPoints, total
+        data: [jsPoints, 
+              this.state.points.HTML,
+              this.state.points.CSS,
+              total
+              
           // this.findPercents(repoLangs.CSS),
           // this.findPercents(repoLangs.HTML)
         ],
@@ -75,8 +79,17 @@ export default class Home extends Component {
     return (
       <div className="App">
 
+        <Col md={6}>
+          <Doughnut
+            ref='chart'
+            data={langData}
+            width={100}
+            height={50} 
+          />
+        </Col>
+
         {/* <img src={iconImg} /> */}
-        <p>{jsPoints}</p>
+        {/* <p>{jsPoints}</p> */}
         <Col md={6}>
             <Bar
               data={langData}
