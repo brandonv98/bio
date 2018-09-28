@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';// Dependances are : RRD, Bootstrap
 import {Nav, Row, Col, Jumbotron, Panel, Grid } from 'react-bootstrap'; // ^^
-import logo from './logo.png'; //// lib : Logo
+import PostCardCSS from './../../PostCard.css';
 const PostCard = (props) => {
   return (
       <div>
@@ -9,7 +9,7 @@ const PostCard = (props) => {
           <Grid>
              <Row className="show-grid">
               <Col md={12}>
-                      
+
           <ul className="content-block-list">
             <li className="grid-50 tablet-grid-50">
               <div className="content-block">
