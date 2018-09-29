@@ -381,3 +381,9 @@ a.return-arrow {
 h3.skills--header {
   border-bottom: 1px solid lightgray;
 }
+
+.badge-grid .row {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  /* padding: 50px; */
+}

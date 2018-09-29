@@ -96,7 +96,9 @@ export default class Home extends Component {
       }]
 		};
     return (
-      <Grid>
+      <Grid className="badge-grid">
+      {/* <img src={iconImg} /> */}
+          {/* <p>{jsPoints}</p> */}
         <Row className="show-grid">
           <Col md={6}>
             <Doughnut
@@ -107,8 +109,6 @@ export default class Home extends Component {
             />
           </Col>
 
-          {/* <img src={iconImg} /> */}
-          {/* <p>{jsPoints}</p> */}
           <Col md={6}>
               <Bar
                 data={totalPoints}
@@ -117,9 +117,13 @@ export default class Home extends Component {
                 />
             </Col>
         </Row>
-
-        <PostCard />
         
+        <Row>
+          <Col md={12}>
+            <PostCard />
+          </Col>
+          
+        </Row>
       </Grid>
     );
   }
