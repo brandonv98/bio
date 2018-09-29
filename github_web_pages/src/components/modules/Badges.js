@@ -80,10 +80,10 @@ export default class Home extends Component {
 			labels: ['JavaScript', 'HTML', 'CSS', 'Total'], // Should make these dynamic
 			datasets: [{
 				label: ' SKILL CAP ',
-				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)', 'rgba(111, 51, 139, 0.8)'],
 				borderColor: 'rgba(255,99,132,1)',
 				borderWidth: 1,
-				hoverBackgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
+				hoverBackgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)', 'rgba(111, 51, 139, 0.6)'],
 				hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
         data: [jsPoints, 
               this.state.points.HTML,

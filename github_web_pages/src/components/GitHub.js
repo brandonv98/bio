@@ -80,10 +80,10 @@ export default class GitHub extends Component {
 			labels: ['JavaScript', 'CSS', 'HTML'], // Should make these dynamic
 			datasets: [{
 				label: 'Languages used in Percents for ' + this.state.gitRepoData.name,
-				backgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
+				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
 				borderColor: 'rgba(255,99,132,1)',
 				borderWidth: 1,
-				hoverBackgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+				hoverBackgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)'],
 				hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
 				data: [this.findPercents(repoLangs.JavaScript),
           this.findPercents(repoLangs.CSS),
