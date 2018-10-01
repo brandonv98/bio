@@ -30,7 +30,8 @@ export default class Home extends Component {
     super(props);
     this.state = {
       badges: [],
-      points: []
+      points: [],
+      nodeJS: 2653,
     };
   }
   componentDidMount() {
@@ -44,7 +45,7 @@ export default class Home extends Component {
         console.log(response);
 				this.setState({
           badges: response.data,
-          points: response.data.points
+          points: response.data.points,
 				});
 			})
 			.catch(error => {
@@ -77,24 +78,38 @@ export default class Home extends Component {
       }]
 		};
     const langData = { // charts for languages
-			labels: ['JavaScript', 'HTML', 'CSS', 'Total'], // Should make these dynamic
+			labels: ['JavaScript', 'HTML', 'CSS', 'Total', 'nodeJS'], // Should make these dynamic
 			datasets: [{
 				label: ' SKILL CAP ',
-				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)', 'rgba(111, 51, 139, 0.8)'],
-				borderColor: 'rgba(169, 173, 172,0.8)',
+				backgroundColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)', 'rgba(111, 51, 139, 0.8)', 'rgba(88, 149, 86, 0.8)'],
+				borderColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)', 'rgba(111, 51, 139, 0.6)'],
 				borderWidth: 1,
 				hoverBackgroundColor: ['rgba(255,153,4,0.6)', 'rgba(22,189,244,0.6)', 'rgba(255,0,0,0.6)', 'rgba(111, 51, 139, 0.6)'],
-				hoverBorderColor: ['rgba(255,153,4,0.9)', 'rgba(22,189,244,0.9)', 'rgba(255,0,0,0.9)'],
+				hoverBorderColor: 'rgba(169, 173, 172,0.8)',
         data: [jsPoints, 
               this.state.points.HTML,
               this.state.points.CSS,
-              total
+              total,
+              this.state.nodeJS
               
           // this.findPercents(repoLangs.CSS),
           // this.findPercents(repoLangs.HTML)
         ],
       }]
-		};
+    };
+    const commitData = { // Commit Chart Data, total size of repo
+			labels: ['Total Size', ],
+			datasets: [{
+				label: 'Project Size for ',
+				backgroundColor: ['rgba(169, 173, 172,0.6)'],
+				borderColor: 'rgba(23, 239, 185,1)',
+				borderWidth: 1,
+				hoverBackgroundColor: ['rgba(169, 173, 172,0.9)'],
+				hoverBorderColor: ['rgba(169, 173, 172,0.9)'],
+				data: [this.state.nodeJS],
+      }]
+    };
+    
     return (
       <Grid className="badge-grid">
       {/* <img src={iconImg} /> */}
@@ -122,8 +137,17 @@ export default class Home extends Component {
           <Col md={12}>
             <PostCard />
           </Col>
-          
         </Row>
+
+        <Row className="show-grid">
+          <Col md={12}>
+            <HorizontalBar
+              data={commitData}
+              width={100}
+              height={30} />
+          </Col>
+        </Row>
+
       </Grid>
     );
   }
