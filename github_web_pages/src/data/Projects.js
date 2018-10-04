@@ -41,8 +41,9 @@ export const ProjectsData = [{
 		title: "Blue Crush QC",
 		img_src: require('../project_images/bluecrushqc_full_Desktop.png'),
 		skills: ['HTML', 'CSS', 'Javascript', 'PHP', 'WordPress', 'Search Engine Optimization'],
-		description: "Project was for a local bussiness, specializing in tanning, massage therapy, and beauty. Used JavaScript to handle the slideshow. CSS to make everything nice and cute. HTML for the initial structure. WordPress, and PHP for the new feed, as well for the backend.",
-		project_link_github: ""
+		description: "Project was for a local bussiness, specializing in tanning, massage therapy, and beauty. Used JavaScript to handle the slideshow. CSS to make everything nice and cute. HTML for the initial structure. WordPress, and PHP for the news feed, as well for the admin back-end.",
+		project_link_github: "",
+		// project_link: ""
   },
 	{
 		title: "Random Quote Generator",
