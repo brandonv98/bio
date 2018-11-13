@@ -42,7 +42,6 @@ export default class Home extends Component {
 		// Make a request for a user with a given ID
 		axios.get(`https://teamtreehouse.com/brandonvancamp2.json`)
 			.then(response => {
-        console.log(response);
 				this.setState({
           badges: response.data,
           points: response.data.points,
