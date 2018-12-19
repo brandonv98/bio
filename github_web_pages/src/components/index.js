@@ -10,7 +10,7 @@ import {
 // import Container from './modules/Container'; // Home page
 // import GitHub from './GitHub'; // github API
 // import Footer from './Footer';
-import { Head, Container, GitHub, Footer, Badges} from './modules';
+import { Head, Container, GitHub, Footer, Badges, ContactForm} from './modules';
 // Dependencies
 import {
   Route,
@@ -18,6 +18,7 @@ import {
 } from 'react-router-dom';
 // Not Found Page
 import NotFound from './404Error/NotFound';
+
 export default class Home extends Component {
   render() {
     console.log('Looking for the source code? Just send me a email for it! Brandon@csdevs.io :)');
@@ -29,6 +30,7 @@ export default class Home extends Component {
           <Switch> {/* SWITCH */}
             <Route path='/:repo/github' component={GitHub} />
             <Route exact path='/:badge/badges' component={Badges} />
+            <Route exact path='/:badge/contact' component={ContactForm} />
             <Route path='/bio' render={() =>
                 <Container data={ProjectsData}/> }/>
             <Route component={NotFound} />

@@ -102,6 +102,15 @@ export const ProjectsData = [{
 		description: "",
 		project_link_github: "",
 		website_domain_name: "palmerhillsplace.com"
+	},
+	{
+		title: "Tic Tac Toe",
+		img_src: require('../project_images/tictactoe-inprogress.png'),
+		img_src_next: require("../project_images/tictactoe-start.png"),
+		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
+		description: "",
+		project_link_github: "",
+		website_domain_name: ""
   }
 ];
 
