@@ -241,8 +241,18 @@ a.github {
   background-image: url(img/github.svg);
 }
 
+a.website {
+  background-image: url(img/website.svg);
+  margin-left: 10px;
+}
+
 a.social:hover {
   opacity: .5;
+}
+
+li > p.website-domain-name {
+  display: inline ;
+  color: #54616da1;
 }
 
 .img-thumbnail {
@@ -328,9 +338,30 @@ ul.skills {
   background: #3bdb55;
 }
 
+.skills li.nodejs {
+  background-color: #0eac17;
+}
+
+.skills li.express {
+  background-color: #f4dd00;
+}
+
+.skills li.npm {
+  background-color: rgb(201, 20, 0);
+}
+
+.skills li.sql {
+  background-color: #8821c4;
+}
+
+.skills li.search {
+  /* background-color: #3d5a76; */
+}
+
 .skills li.javascript, .skills li.jsx, .skills li.d3js {
   background: #ff9904;
 }
+
 
 .skills li.documentation, .skills li.communication {
   background-color: teal;
