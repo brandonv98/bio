@@ -30,6 +30,15 @@ export const ProjectsData = [{
 		project_link_github: "Game_Show_App"
 	},
 	{
+		title: "Tic Tac Toe",
+		img_src: require('../project_images/tictactoe-inprogress.png'),
+		img_src_next: require("../project_images/tictactoe-start.png"),
+		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
+		description: "Coming soon...",
+		project_link_github: "tic_tac_toe",
+		website_domain_name: "https://brandonv98.github.io/tic_tac_toe"
+  },
+	{
 		title: "Circle Of Death",
 		img_src: require('../project_images/circle-of-death-start.png'),
 		img_src_next: require("../project_images/circle-of-death-ingame.png"),
@@ -102,16 +111,7 @@ export const ProjectsData = [{
 		description: "",
 		project_link_github: "",
 		website_domain_name: "palmerhillsplace.com"
-	},
-	{
-		title: "Tic Tac Toe",
-		img_src: require('../project_images/tictactoe-inprogress.png'),
-		img_src_next: require("../project_images/tictactoe-start.png"),
-		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
-		description: "",
-		project_link_github: "",
-		website_domain_name: ""
-  }
+	}
 ];
 
 
