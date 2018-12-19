@@ -86,5 +86,30 @@ export const ProjectsData = [{
 		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization'],
 		description: "",
 		project_link_github: ""
+	},
+	{
+		title: "Jordan Holmes Sales",
+		img_src: require('../project_images/jordan-holmes-screen-shot.png'),
+		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization', 'NodeJS', 'Express', 'NPM'],
+		description: "Coming soon...",
+		project_link_github: "",
+		website_domain_name: "jordanholmes.com"
+	},
+	{
+		title: "Palmer Hills Place",
+		img_src: require('../project_images/palmer-hills-place-screen-shot.png'),
+		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
+		description: "",
+		project_link_github: "",
+		website_domain_name: "palmerhillsplace.com"
   }
 ];
+
+
+// {
+// 	title: ,
+// 	img_src: require('../'),
+// 	skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization'],
+// 	description: "",
+// 	project_link_github: ""
+// }
