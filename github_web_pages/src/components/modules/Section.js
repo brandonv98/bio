@@ -38,6 +38,13 @@ const Section = (props) => {
                 : <li></li>
               }
             </ul>
+            <ul>
+              {
+                (props.doesHaveWebsite) // Link
+                ? <li><p className="website-domain-name">View Website</p><Link to={`http://${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website"><p>View Website</p></Link></li>
+                : <li></li>
+              }
+            </ul>
           </div>
         </Col>);
 }

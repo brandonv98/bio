@@ -21,6 +21,8 @@ const Container = (props) => {
        doesExist={section.project_link_github}
        project_link_github={section.project_link_github}
        link_src={section.link_src}
+       doesHaveWebsite={section.website_domain_name}
+       website_link={section.website_domain_name}
        key={i} />
 	});
 	return (
