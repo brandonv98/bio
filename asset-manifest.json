@@ -1,10 +1,12 @@
 {
-  "main.css": "static/css/main.8be45f08.css",
-  "main.css.map": "static/css/main.8be45f08.css.map",
-  "main.js": "static/js/main.c8df3fc7.js",
-  "main.js.map": "static/js/main.c8df3fc7.js.map",
+  "main.css": "static/css/main.fcbd13d7.css",
+  "main.css.map": "static/css/main.fcbd13d7.css.map",
+  "main.js": "static/js/main.41213d89.js",
+  "main.js.map": "static/js/main.41213d89.js.map",
   "static/media/bluecrushqc_full_Desktop.png": "static/media/bluecrushqc_full_Desktop.d46eef17.png",
   "static/media/brandonv98.github.io_Random_Quote_Generator_.png": "static/media/brandonv98.github.io_Random_Quote_Generator_.943ff7b2.png",
+  "static/media/circle-of-death-ingame.png": "static/media/circle-of-death-ingame.2afaf8ab.png",
+  "static/media/circle-of-death-start.png": "static/media/circle-of-death-start.9044cac5.png",
   "static/media/dashboard.png": "static/media/dashboard.5de1c93d.png",
   "static/media/employee_directory.png": "static/media/employee_directory.285492ff.png",
   "static/media/employee_overlay.png": "static/media/employee_overlay.af683657.png",
@@ -15,10 +17,15 @@
   "static/media/goodewords.png": "static/media/goodewords.8aa94daf.png",
   "static/media/inGame.png": "static/media/inGame.ed2d0698.png",
   "static/media/j3.png": "static/media/j3.a68ffd8e.png",
+  "static/media/jordan-holmes-screen-shot.png": "static/media/jordan-holmes-screen-shot.a57ed98c.png",
   "static/media/linkedin.svg": "static/media/linkedin.7ee748b2.svg",
   "static/media/logo.png": "static/media/logo.9e949c3f.png",
+  "static/media/palmer-hills-place-screen-shot.png": "static/media/palmer-hills-place-screen-shot.cd2478ca.png",
   "static/media/repo-forked.svg": "static/media/repo-forked.cc68e6d6.svg",
+  "static/media/tictactoe-inprogress.png": "static/media/tictactoe-inprogress.06cf05d3.png",
+  "static/media/tictactoe-start.png": "static/media/tictactoe-start.4d2a2343.png",
   "static/media/towing.png": "static/media/towing.8305bc52.png",
   "static/media/tuff_girl.png": "static/media/tuff_girl.abb17380.png",
-  "static/media/twitter.svg": "static/media/twitter.5e9b2560.svg"
+  "static/media/twitter.svg": "static/media/twitter.5e9b2560.svg",
+  "static/media/website.svg": "static/media/website.71ddd59b.svg"
 }
