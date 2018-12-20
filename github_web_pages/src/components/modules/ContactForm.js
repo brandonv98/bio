@@ -37,26 +37,14 @@ const ContactForm = (props) => {
                 required/>
             </div>
             <div className="form-group">
-              <label className="form-label" htmlFor="building_number">Building Number</label>
+              <label className="form-label" htmlFor="customer_number">Customer Number</label>
               <input
                 type="text"
                 className="form-control"
-                id="building_number"
-                name="building_number"
-                placeholder="Your Building #"
-                tabIndex={2}
-                required/>
-            </div>
-            <div className="form-group">
-              <label className="form-label" htmlFor="apt_number">Apt Number</label>
-              <input
-                type="text"
-                className="form-control"
-                id="apt_number"
-                name="apt_number"
-                placeholder="Your Apt #"
-                tabIndex={2}
-                required/>
+                id="customer_number"
+                name="customer_number"
+                placeholder="Your Customer # (Opt)"
+                tabIndex={2}/>
             </div>
             <div className="form-group">
               <label className="form-label" htmlFor="email">Email</label>
