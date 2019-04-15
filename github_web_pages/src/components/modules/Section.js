@@ -38,10 +38,17 @@ const Section = (props) => {
                 : <li></li>
               }
             </ul>
-            <ul>
+            <ul className="center-links">
               {
                 (props.doesHaveWebsite) // Link
                 ? <li><p className="website-domain-name">View Website</p><Link to={`http://${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website"><p>View Website</p></Link></li>
+                : <li></li>
+              }
+            </ul>
+            <ul className="center-links">
+              {
+                (props.doesExist) // Link
+                ? <li><NavLink to={`/${props.project_link_github}/github`} rel="noreferrer noopener" className="website-domain-name"><p>More Detail</p></NavLink></li>
                 : <li></li>
               }
             </ul>

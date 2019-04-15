@@ -12,6 +12,6 @@ const Footer = (props) => ( // Footer
       <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" rel="noreferrer noopener" target="_blank" className="social linkedin">Linkedin</a></li>
       <li><a href="https://twitter.com/brandondvancamp/" rel="noreferrer noopener" target="_blank" className="social twitter">Linkedin</a></li>
     </ul>
-    <p className="copyright">	&#169; Copyright 2018, Brandon VanCamp</p>
+    <p className="copyright">	&#169; Copyright 2018 - 2019, Brandon VanCamp</p>
   </footer>);
 export default Footer;
