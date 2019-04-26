@@ -48,7 +48,7 @@ const Section = (props) => {
             <ul className="center-links">
               {
                 (props.doesExist) // Link
-                ? <li><NavLink to={`/${props.project_link_github}/github`} rel="noreferrer noopener" className="website-domain-name"><p>More Detail</p></NavLink></li>
+                ? <li><NavLink to={`/${props.project_link_github}/github`} rel="noreferrer noopener" className="website-domain-name">More Detail</NavLink></li>
                 : <li></li>
               }
             </ul>

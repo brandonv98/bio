@@ -250,9 +250,17 @@ a.social:hover {
   opacity: .5;
 }
 
-li > p.website-domain-name {
+li > a.website-domain-name  {
   display: inline ;
-  color: #54616da1;
+  /* color: #54616da1; */
+  opacity: 1;
+
+}
+li > a.website-domain-name:hover  {
+  /* display: inline ; */
+  /* color: #54616da1; */
+  opacity: .5;
+  text-decoration: none;
 }
 
 .img-thumbnail {
