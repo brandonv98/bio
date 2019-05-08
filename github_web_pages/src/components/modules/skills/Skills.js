@@ -8,6 +8,7 @@ import Skill from './Skill';
 const Section = (props) => {
 
   let stateData = [];
+  // Loop thew badges data array.
   let dataBadges = props.data.badges;
   const badges = () => {
     for (const key in dataBadges) {
