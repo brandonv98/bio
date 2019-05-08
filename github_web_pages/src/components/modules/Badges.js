@@ -16,8 +16,9 @@ import {
 } from 'react-bootstrap';
 import axios from 'axios'; // ^^
 // import PostCardCSS from './../../PostCard.css';
-
-import PostCard from './PostCard';
+// Import skills dependence module
+import Skill from './skills/Skill';
+import Skills from './skills/Skills';
 
 // Dependencies
 // import {
@@ -29,7 +30,7 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      badges: [],
+      badgeData: [],
       points: [],
       nodeJS: 2653,
     };
@@ -43,7 +44,7 @@ export default class Home extends Component {
 		axios.get(`https://teamtreehouse.com/brandonvancamp2.json`)
 			.then(response => {
 				this.setState({
-          badges: response.data,
+          badgeData: response.data,
           points: response.data.points,
 				});
 			})
@@ -55,7 +56,7 @@ export default class Home extends Component {
 
 
   render() {
-    console.log(this.state.points);
+    console.log(this.state.points, this.state.badges);
 
     const jsPoints = this.state.points.JavaScript;
     const total = this.state.points.total;
@@ -97,9 +98,9 @@ export default class Home extends Component {
       }]
     };
     const commitData = { // Commit Chart Data, total size of repo
-			labels: ['Total Size', ],
+			labels: ['Total Skill Capped', ],
 			datasets: [{
-				label: 'Project Size for ',
+				label: 'Skill Cap',
 				backgroundColor: ['rgba(169, 173, 172,0.6)'],
 				borderColor: 'rgba(23, 239, 185,1)',
 				borderWidth: 1,
@@ -133,8 +134,9 @@ export default class Home extends Component {
         </Row>
         
         <Row>
+        {/* Add Section Skills  */}
           <Col md={12}>
-            <PostCard />
+            <Skills data={this.state.badgeData}/>
           </Col>
         </Row>
 
