@@ -13,7 +13,7 @@ export const ProjectsData = [{
 		img_src_next: require("../project_images/employee_directory/employee_overlay.png"),
 		skills: ['ReactJS', 'JavaScript', 'CSS', 'JSX', 'API', 'React-Router-Dom', 'Git', 'GitHub'],
 		description: "This project was originaly done static, with HTML, CSS & JS. However we decided to refactor it more dynamically with ReactJS.",
-		project_link_github: "Employee_Directory_v2.1"
+		project_link_github: "employee_directory"
   },
 	{
 		title: "Analytics Dashboard",
