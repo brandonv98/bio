@@ -62,6 +62,13 @@ export const ProjectsData = [{
 		project_link_github: "Random_Quote_Generator"
   },
 	{
+		title: "Library Manager",
+		img_src: require('../project_images/localhost_3000_novels.png'),
+		skills: ['JavaScript', 'HTML', 'CSS', 'Git', 'GitHub', 'SQL', 'Express', 'NodeJS'],
+		description: "",
+		project_link_github: "library-manager"
+  },
+	{
 		title: "Sketch Template",
 		img_src: require('../project_images/j3.png'),
 		skills: ['Sketch', 'HTML', 'SVG', 'CSS', 'JavaScript', 'jQuery', 'BootStrap'],
