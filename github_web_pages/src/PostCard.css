@@ -142,7 +142,8 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 }
 
 .achievement-hero img:not(.check-complete) {
-   width: 50%;
+   max-width: 100%;
+   width: 100%;
    vertical-align: middle;
    z-index: 2;
    -webkit-transition-duration: 0.2s;
