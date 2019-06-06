@@ -13,14 +13,10 @@ const PostCard = (props) => {
   console.log(props);
   const corses = props.courses;
   return (
-    <Col md={6}>
-
-      <div>
-
-        <ul className="content-block-list">
-          <li className="grid-50 tablet-grid-50">
+        
+          <li className="grid-50 tablet-grid-50 col-md-6">
             <div className="content-block">
-              <div className="grid-70 tablet-grid-70 mobile-grid-70 content-meta">
+              <div className="grid-70 tablet-grid-70 mobile-grid-70 content-meta col-md-5">
                 <strong>Achievement</strong>
                 <h3>{props.name}</h3>
                 <p>{}</p>
@@ -30,16 +26,12 @@ const PostCard = (props) => {
                   <p>{props.earned_date}</p>
                 </div>
               </div>
-              <div className="grid-30 tablet-grid-30 mobile-grid-30 achievement-hero">
+              <div className="grid-30 tablet-grid-30 mobile-grid-30 achievement-hero col-md-4">
                 <img alt="Thinking in Components" src={props.image}/>
               </div>
             </div>
           </li>
-        </ul>
 
-      </div>
-
-    </Col>
   );
 }
 export default PostCard;

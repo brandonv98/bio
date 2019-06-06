@@ -34,9 +34,11 @@ const Section = (props) => {
   });
 
   return (
-    <Row>
-      {skill}
-    </Row>
+
+      <ul className="content-block-list row">
+        {skill}
+      </ul>
+
   );
 }
 export default Section;
