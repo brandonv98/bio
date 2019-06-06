@@ -22,8 +22,9 @@ const PostCard = (props) => {
                 <p>{}</p>
                 <div className="content-actions-container">
                   <span className="icon icon-complete"></span>
-                  <strong>Achieved</strong>
-                  <p>{props.earned_date}</p>
+                  {/* <strong>Achieved</strong> */}
+                  {/* TODO: Add in date function */}
+                  {/* <p>{props.earned_date}</p> */}
                 </div>
               </div>
               <div className="grid-30 tablet-grid-30 mobile-grid-30 achievement-hero col-md-4">
