@@ -20,10 +20,7 @@ const Section = (props) => {
   };
   badges();
 
-  // console.log(sdName);
-
   let skill = sdData.map((skill, i) => {
-    // console.log(skill.courses[0]);
     return <Skill 
     key={skill.id}
     image={skill.icon_url}
