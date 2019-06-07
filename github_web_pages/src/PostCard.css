@@ -152,7 +152,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 .icon-complete {
   width: 28px;
   height: 28px;
-  background-image: ;
+  background-image: url('img/green-check-mark.png');
   background-size: 100%;
 }
 
