@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 // Components lib
 import {ProjectsData} from '../data/Projects'; // local DB
-
+// Loading module styles //
+import LoadingCss from '../LoaderStyles.css';
 // Load Modules
 import {
   Head,
