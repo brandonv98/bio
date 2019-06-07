@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 // Loading module styles //
-import LoadingCss from '../LoaderStyles.css';
+import LoadingCss from '../../LoaderStyles.css';
 // Components lib
 import brandonvancamp2 from '../../data/brandonvancamp2'; // local DB
 import {Doughnut, Bar, HorizontalBar} from 'react-chartjs-2'; // Charts for data
@@ -110,8 +110,6 @@ export default class Home extends Component {
 
     return (
       <Grid className="badge-grid">
-        {/* <img src={iconImg} /> */}
-        {/* <p>{jsPoints}</p> */}
         <Row className="show-grid">
           <Col md={6}>
             <Doughnut ref='chart' data={langData} width={100} height={50}/>
@@ -125,10 +123,11 @@ export default class Home extends Component {
         <Row>
           {/* Add Section Skills  */}
           <Col md={12}>
-            {
-              (isLoading)?  :
-            }
-            <Skills data={this.state.badgeData}/>
+            {/* If data is loading show loader module, else show data */}
+            {this.state.isLoading
+              ? <div className="loader"></div>
+              : <Skills data={this.state.badgeData}/>
+}
           </Col>
         </Row>
 
