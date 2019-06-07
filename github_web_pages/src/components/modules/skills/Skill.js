@@ -2,7 +2,8 @@ import React from 'react';
 import PostCardCSS from './../../../PostCard.css';
 const PostCard = (props) => {
   const corses = props.courses;
-  console.log(props);
+  console.log(props.courses);
+  // let isUndefined = props.courses == undefined;
   return (
         
           <li className="grid-50 tablet-grid-50 col-md-6">
@@ -10,7 +11,7 @@ const PostCard = (props) => {
               <div className="grid-70 tablet-grid-70 mobile-grid-70 content-meta col-md-5">
                 <strong>Achievement</strong>
                 <h3>{props.name}</h3>
-                <p>{}</p>
+                  <p>{props.courses.title}</p>
                 <div className="content-actions-container">
                   <span className="icon icon-complete"></span>
                   <strong>Achieved</strong>

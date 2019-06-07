@@ -25,7 +25,11 @@ const Section = (props) => {
       image={skill.icon_url}
       name={skill.name}
       earned_date={skill.earned_date}
-      courses={skill.courses[0]}/>
+      courses={
+        skill.courses[0] == undefined 
+        ? {title: ' '} 
+        : skill.courses[0]
+        }/>
   });
 
   return (
