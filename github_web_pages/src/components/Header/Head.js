@@ -23,7 +23,11 @@ const Head = (props) => {
               <Col md={12}>
                 <Nav className='main-nav'>
                   <Route path='/' render={() =>
-                    <li><NavLink to={`/bio`}>Bio</NavLink></li> }/>
+                    <ul className="flex">
+                    <li><NavLink to={`/bio`}>Bio</NavLink></li>
+                    <li><NavLink to={`/bio/badges`}>Skill Cap</NavLink></li>
+                    </ul> 
+                    }/>
                 </Nav>
               </Col>
             </Row>
