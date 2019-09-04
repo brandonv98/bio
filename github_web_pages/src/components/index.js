@@ -24,7 +24,7 @@ export default class Home extends Component {
         <Switch>
           {/* SWITCH */}
           <Route path='/:repo/github' component={GitHub}/>
-          <Route exact path='/:badge/badges' component={Badges}/>
+          {/* <Route exact path='/:badge/badges' component={Badges}/> */}
           <Route exact path='/:message/contact' component={ContactForm}/>
           <Route path='/bio' render={() => <Container data={ProjectsData}/>}/>
           <Route component={NotFound}/>

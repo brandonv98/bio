@@ -2,7 +2,6 @@ import React from 'react';
 import PostCardCSS from './../../../PostCard.css';
 const PostCard = (props) => {
   const corses = props.courses;
-  console.log(props.courses);
   // let isUndefined = props.courses == undefined;
   return (
         

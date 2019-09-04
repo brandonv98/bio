@@ -25,7 +25,7 @@ const Head = (props) => {
                   <Route path='/' render={() =>
                     <ul className="flex">
                     <li><NavLink to={`/bio`}>Bio</NavLink></li>
-                    <li><NavLink to={`/bio/badges`}>Skill Cap</NavLink></li>
+                    {/* <li><NavLink to={`/bio/badges`}>Skill Cap</NavLink></li> */}
                     </ul> 
                     }/>
                 </Nav>
