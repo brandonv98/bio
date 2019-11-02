@@ -109,7 +109,7 @@ export const ProjectsData = [{
 		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization', 'NodeJS', 'Express', 'NPM'],
 		description: "Coming soon...",
 		project_link_github: "",
-		website_domain_name: "jordanholmes.com"
+		website_domain_name: "https://jordan-holmes-sales-website.herokuapp.com"
 	},
 	{
 		title: "Palmer Hills Place",
