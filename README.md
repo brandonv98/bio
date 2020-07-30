@@ -3,15 +3,15 @@
 
 **Dependencies defined in this project**
 ```
-twbs / bootstrap ^ 4.0.0
-chartjs / Chart.js chart.js ^ 2.7.1
-tschaub / gh-pages ^ 1.1.0
-facebook / react ^ 16.2.0
-react-bootstrap / react-bootstrap ^ 0.32.1
-jerairrest / react-chartjs-2 ^ 2.7.0
-facebook / react react-dom ^ 16.2.0
-ReactTraining / react-router react-router-dom ^ 4.2.2
-facebook / create-react-app react-scripts 1.1.1
+twbs / bootstrap ^4.0.0
+chartjs / Chart.js chart.js ^2.7.1
+tschaub / gh-pages ^1.1.0
+facebook / react ^16.2.0
+react-bootstrap / react-bootstrap ^0.32.1
+jerairrest / react-chartjs-2 ^2.7.0
+facebook / react react-dom ^16.2.0
+ReactTraining / react-router react-router-dom ^4.2.2
+facebook / create-react-app react-scripts ^1.1.1
 ```
 ## How to view this project
 **To view this Project:**
