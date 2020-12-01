@@ -10,8 +10,8 @@ const Footer = (props) => ( // Footer
     <ul>
       <li><a href="https://github.com/brandonv98" rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
       <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" rel="noreferrer noopener" target="_blank" className="social linkedin">Linkedin</a></li>
-      <li><a href="https://twitter.com/brandondvancamp/" rel="noreferrer noopener" target="_blank" className="social twitter">Linkedin</a></li>
+      <li><a href="https://twitter.com/developerOneB/" rel="noreferrer noopener" target="_blank" className="social twitter">Twitter</a></li>
     </ul>
-    <p className="copyright">	&#169; Copyright 2018 - 2019, Brandon VanCamp</p>
+    <p className="copyright">	&#169; Copyright 2021, Brandon VanCamp</p>
   </footer>);
 export default Footer;

@@ -15,7 +15,7 @@ const Head = (props) => {
           <ul>
             <li><a href="https://github.com/brandonv98" target="_blank" rel="noreferrer noopener" className="social github">Github</a></li>
             <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" rel="noreferrer noopener" target="_blank" className="social linkedin">Linkedin</a></li>
-            <li><a href="https://twitter.com/brandondvancamp/" target="_blank" rel="noreferrer noopener" className="social twitter">Linkedin</a></li>
+            <li><a href="https://twitter.com/developerOneB/" target="_blank" rel="noreferrer noopener" className="social twitter">Twitter</a></li>
           </ul>
         </Jumbotron>
           <Grid>
