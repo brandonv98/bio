@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // Loading module styles //
 import LoadingCss from '../../LoaderStyles.css';
 // Components lib
-import brandonvancamp2 from '../../data/brandonvancamp2'; // local DB
+// import brandonvancamp2 from '../../data/brandonvancamp2'; // local DB
 import {Doughnut, Bar, HorizontalBar} from 'react-chartjs-2'; // Charts for data
 import {Row, Col, Nav, Grid} from 'react-bootstrap';
 import axios from 'axios'; // ^^
