@@ -41,7 +41,9 @@ const Section = (props) => {
             <ul className="center-links">
               {
                 (props.doesHaveWebsite) // Link
-                ? <li><p className="website-domain-name">View Website</p><Link to={`http://${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website"><p>View Website</p></Link></li>
+                ? <li><p className="website-domain-name">View Website</p>
+                      <a href={`${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website">
+                        <p>View Website</p></a></li>
                 : <li></li>
               }
             </ul>
