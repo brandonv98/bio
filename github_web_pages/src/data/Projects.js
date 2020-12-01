@@ -117,7 +117,7 @@ export const ProjectsData = [{
 		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
 		description: "",
 		project_link_github: "",
-		website_domain_name: "palmerhillsplace.com"
+		website_domain_name: "https://palmerhillsplace.com"
 	}
 ];
 
