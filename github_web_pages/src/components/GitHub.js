@@ -113,16 +113,15 @@ export default class GitHub extends Component {
                   <NavLink className='return-arrow' onClick={this.returnBack} to={`/bio`}>&#8617; Return</NavLink>
                 </li>
                 <li>
-                  <NavLink to={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
+                  <a href={`${this.state.forkLink}`} rel="noreferrer noopener" target="_blank">Fork Project
                     <span><img src={ForkRepo} alt="forked gh icon" className="octicon" /></span>
-                  </NavLink>
+                  </a>
                 </li>
 
             </Nav>
 						<Nav className='main-nav'>
 							<li>
-								<Link to={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo
-								</Link>
+								<a href={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo</a>
 							</li>
 						</Nav>
           </Col>
@@ -134,9 +133,10 @@ export default class GitHub extends Component {
             <p><b>Project description</b> : {this.state.gitRepoData.description}</p>
           </Col>
           <Col md={4}>
-            <p><b>Developed By</b> : Brandon V</p>
-            <p><b>Created on</b> : {this.state.gitRepoData.created_at} &#8628;</p>
-            <p><b>Last Updated</b> : {this.state.gitRepoData.updated_at}</p>
+            <p><b>Developed By</b>: Brandon VanCamp</p>
+            <p><b>Created on</b>: {this.state.gitRepoData.created_at} &#8628;</p>
+            <p><b>Last Updated</b>: {this.state.gitRepoData.updated_at}</p>
+				<p><b>Open Project Documentation</b>: <a href={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Wiki</a></p>
           </Col>
         </Row>
         {/* Grids */}
