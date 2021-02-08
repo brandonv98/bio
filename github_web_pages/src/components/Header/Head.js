@@ -28,6 +28,8 @@ const Head = (props) => {
                     <ul className="flex">
                     <li><NavLink to={`/bio`}>Bio</NavLink></li>
                     {/* <li><NavLink to={`/bio/badges`}>Skill Cap</NavLink></li> */}
+                    {/* <li><NavLink to={`/bio/packages`}>Package Library</NavLink></li> */}
+                    {/* <li><NavLink to={`/bio/wiki`}>Wikis</NavLink></li> */}
                     </ul> 
                     }/>
                 </Nav>
