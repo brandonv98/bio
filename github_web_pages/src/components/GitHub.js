@@ -9,6 +9,7 @@ import {
 } from 'react-bootstrap'; // //Dependances are : BS, RRD, Axios, React Chartjs 2, || Documentation Links : axios - https://github.com/jerairrest/react-chartjs-2 ///  BS - https://react-bootstrap.github.io/getting-started/introduction/  //// ChartJS 2 : https://octicons.github.com/
 import {
 	NavLink,
+	Link,
 } from 'react-router-dom'; // ^^
 import axios from 'axios'; // ^^
 import {
