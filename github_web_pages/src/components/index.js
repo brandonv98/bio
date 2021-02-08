@@ -13,7 +13,7 @@ import {
 // Dependencies
 import {Route, Switch} from 'react-router-dom';
 // Not Found Page
-import NotFound from './404Error/NotFound';
+import NotFound from './errors/NotFound';
 
 export default class Home extends Component {
   render() {

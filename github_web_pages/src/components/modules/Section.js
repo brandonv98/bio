@@ -34,14 +34,14 @@ const Section = (props) => {
             <ul>
               {
                 (props.doesExist) // Link
-                ? <li><Link to={`https://github.com/brandonv98/${props.project_link_github}`} rel="noreferrer noopener" target="_blank" className="social github">Github</Link></li>
+                ? <li><a href={`https://github.com/brandonv98/${props.project_link_github}`} rel="noreferrer noopener" target="_blank" className="social github">Github</a></li>
                 : <li></li>
               }
             </ul>
             <ul className="center-links">
               {
                 (props.doesHaveWebsite) // Link
-                ? <li><p className="website-domain-name">View Website</p><Link to={`https://${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website"><p>View Website</p></Link></li>
+                ? <li><p className="website-domain-name">View Website</p><a href={`https://${props.website_link}`} rel="noreferrer noopener" target="_blank" className="social website"><p>View Website</p></a></li>
                 : <li></li>
               }
             </ul>
