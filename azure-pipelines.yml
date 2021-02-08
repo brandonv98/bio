@@ -14,7 +14,7 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+- development
 
 pool:
   vmImage: ubuntu-default
