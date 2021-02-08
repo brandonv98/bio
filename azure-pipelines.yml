@@ -1,4 +1,14 @@
 # Starter pipeline
+- task: GitHubRelease@1
+  inputs:
+    repositoryName: '$(Build.Repository.Name)'
+    action: 'create'
+    target: '$(Build.SourceVersion)'
+    tagSource: 'userSpecifiedTag'
+    tag: 'release-gh'
+    title: 'gh-pages'
+    changeLogCompareToRelease: 'lastFullRelease'
+    changeLogType: 'commitBased'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
