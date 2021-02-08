@@ -120,8 +120,8 @@ export default class GitHub extends Component {
             </Nav>
 						<Nav className='main-nav'>
 							<li>
-								<NavLink to={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo
-								</NavLink>
+								<Link to={`https://brandonv98.github.io/${this.state.repoName}`} rel="noreferrer noopener" target="_blank">Live Demo
+								</Link>
 							</li>
 						</Nav>
           </Col>
