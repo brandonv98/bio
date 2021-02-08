@@ -49,6 +49,10 @@ in your terminal to run the project & start a local server.
 
 
 ## Errors & Problems
+***Console warn & errors***
+`$ npx react-codemod rename-unsafe-lifecycles`
+
 If you have any questions/issues or just want to chat id love to here from you **[Brandon](brandon@overtimewebdev.com)**.
 
 [Contributors for this project](CONTRIBUTORS.md)
+
