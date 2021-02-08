@@ -1,7 +1,8 @@
 import React from 'react';
 import {Route, NavLink} from 'react-router-dom';// Dependances are : RRD, Bootstrap
 import {Nav, Row, Col, Jumbotron, Panel, Grid } from 'react-bootstrap'; // ^^
-import logo from './logo.png'; //// lib : Logo
+// import logo from './@me-logo.png'; //// lib : Logo
+import logo from './@me-logo-dark.png'; //// lib : Logo
 const Head = (props) => {
   return (
       <div>
