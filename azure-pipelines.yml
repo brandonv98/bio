@@ -16,9 +16,6 @@
 trigger:
 - development
 
-pool:
-  vmImage: ubuntu-default
-
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
