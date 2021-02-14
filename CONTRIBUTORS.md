@@ -1,3 +1,3 @@
 
 **Developers**
-> - Brandon VanCamp  Contact : **[Brandon](brandon@overtimewebdev.com)**.
+> - Brandon VanCamp  Contact: **[Brandon V](brandon@vancamp.dev)**.
