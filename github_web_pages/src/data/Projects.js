@@ -36,7 +36,7 @@ export const ProjectsData = [{
 		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'NodeJS', 'Express', 'NPM', 'Search Engine Optimization'],
 		description: "Coming soon...",
 		project_link_github: "tic_tac_toe",
-		website_domain_name: "https://brandonv98.github.io/tic_tac_toe"
+		website_domain_name: "brandonv98.github.io/tic_tac_toe"
   },
 	{
 		title: "Circle Of Death",
@@ -109,7 +109,7 @@ export const ProjectsData = [{
 		skills: ['ReactJS', 'JSX', 'CSS', 'JavaScript', 'Search Engine Optimization', 'NodeJS', 'Express', 'NPM'],
 		description: "Coming soon...",
 		project_link_github: "",
-		website_domain_name: "https://jordan-holmes-sales-website.herokuapp.com"
+		website_domain_name: "jordan-holmes-sales-website.herokuapp.com"
 	},
 	{
 		title: "Palmer Hills Place",
