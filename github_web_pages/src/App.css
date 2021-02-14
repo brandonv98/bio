@@ -264,7 +264,8 @@ li > a.website-domain-name:hover  {
 }
 
 .img-thumbnail {
-  max-height: 45em;
+  max-height: 100% !important;
+  /* max-height: 45em; */
 }
 
 .card {
