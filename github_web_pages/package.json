@@ -24,6 +24,7 @@
   },
   "homepage": "https://brandonv98.github.io/bio",
   "devDependencies": {
+    "eslint": "^7.19.0",
     "gh-pages": "^1.1.0"
   },
   "browserslist": {
