@@ -6,7 +6,7 @@ import {
 	Col,
 	Nav,
 	Grid
-} from 'react-bootstrap'; // //Dependances are : BS, RRD, Axios, React Chartjs 2, || Documentation Links : axios - https://github.com/jerairrest/react-chartjs-2 ///  BS - https://react-bootstrap.github.io/getting-started/introduction/  //// ChartJS 2 : https://octicons.github.com/
+} from 'react-bootstrap'; // Dependencies are : BS, RRD, Axios, React Chartjs 2, || Documentation Links : axios - https://github.com/jerairrest/react-chartjs-2 ///  BS - https://react-bootstrap.github.io/getting-started/introduction/  //// ChartJS 2 : https://octicons.github.com/
 import {
 	NavLink,
 	Link,
@@ -64,7 +64,7 @@ export default class GitHub extends Component {
 	findPercents = (number) => { // Take all languages data and get the percent used of each one.
 		const repoLang = this.state.gitData; // Get all languages
 		const total = repoLang.CSS + repoLang.JavaScript + repoLang.HTML // Add all languages
-		let percent = (number / total) * 100; // Find the percent used of each languag
+		let percent = (number / total) * 100; // Find the percent used of each language 
 		return percent;
 	}
 	handleRepoNameUnderScores = (title) => { //  Delete the under scores _ for the repo name
