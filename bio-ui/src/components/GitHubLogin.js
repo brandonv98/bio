@@ -10,3 +10,18 @@ request(options, function (error, response) {
   if (error) throw new Error(error);
     console.log(response.body);
 });
+
+import React, { Component } from 'react'
+
+export class GitHubLogin extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
+
+export default GitHubLogin
+
