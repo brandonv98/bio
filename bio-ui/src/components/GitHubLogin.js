@@ -8,5 +8,5 @@ var options = {
 };
 request(options, function (error, response) {
   if (error) throw new Error(error);
-  console.log(response.body);
+    console.log(response.body);
 });
