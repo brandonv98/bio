@@ -51,6 +51,7 @@ export default class GitHub extends Component {
 		// Make our 2nd request
 		axios.get(`https://api.github.com/repos/${owner}/${repo}`)
 			.then(response => {
+				console.log(response);
 				this.setState({
 					gitRepoData: response.data, //Git Repo Data
 					forkLink: response.data.clone_url, // fork link for repo
@@ -64,7 +65,7 @@ export default class GitHub extends Component {
 	findPercents = (number) => { // Take all languages data and get the percent used of each one.
 		const repoLang = this.state.gitData; // Get all languages
 		const total = repoLang.CSS + repoLang.JavaScript + repoLang.HTML // Add all languages
-		let percent = (number / total) * 100; // Find the percent used of each languag
+		let percent = (number / total) * 100; // Find the percent used of each language
 		return percent;
 	}
 	handleRepoNameUnderScores = (title) => { //  Delete the under scores _ for the repo name
