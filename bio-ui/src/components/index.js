@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-// Components lib
+import React, {Component} from 'react'; // Components lib
 import {ProjectsData} from '../data/Projects'; // local DB
 // Load Modules
 import {
@@ -8,11 +7,10 @@ import {
   GitHub,
   Footer,
   Badges,
-  ContactForm
-} from './modules';
-// Dependencies
-import {Route, Switch} from 'react-router-dom';
-// Not Found Page
+  ContactForm,
+  GitHubLogin
+} from './modules'; // Dependencies
+import {Route, Switch} from 'react-router-dom'; // Not Found Page
 import NotFound from './errors/NotFound';
 
 export default class Home extends Component {
@@ -24,6 +22,7 @@ export default class Home extends Component {
         <Switch>
           {/* SWITCH */}
           <Route path='/:repo/github' component={GitHub}/>
+          <Route path='/user/login/github' component={GitHubLogin}/>
           {/* <Route exact path='/:badge/badges' component={Badges}/> */}
           <Route exact path='/:message/contact' component={ContactForm}/>
           <Route path='/bio' render={() => <Container data={ProjectsData}/>}/>
