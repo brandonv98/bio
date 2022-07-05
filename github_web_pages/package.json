@@ -1,5 +1,6 @@
 {
   "name": "github_web_pages",
+  "author": "Brandon VanCamp",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
