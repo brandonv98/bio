@@ -6,7 +6,7 @@ import {
 	Col,
 	Nav,
 	Grid
-} from 'react-bootstrap'; // //Dependances are : BS, RRD, Axios, React Chartjs 2, || Documentation Links : axios - https://github.com/jerairrest/react-chartjs-2 ///  BS - https://react-bootstrap.github.io/getting-started/introduction/  //// ChartJS 2 : https://octicons.github.com/
+} from 'react-bootstrap';
 import {
 	NavLink,
 	Link,
