@@ -3,6 +3,10 @@
 
 **Dependencies defined in this project**
 ```
+- BS, RRD, Axios, React Chartjs 2 
+[Documentation Links: axios](https://github.com/jerairrest/react-chartjs-2)
+[BS](https://react-bootstrap.github.io/getting-started/introduction/)
+[ChartJS 2](https://octicons.github.com/)
 twbs / bootstrap ^4.0.0
 chartjs / Chart.js chart.js ^2.7.1
 tschaub / gh-pages ^1.1.0
