@@ -17,7 +17,7 @@ const Head = (props) => {
           <ul>
             <li><a href="https://github.com/brandonv98" target="_blank" rel="noreferrer noopener" className="social github">Github</a></li>
             <li><a href="https://www.linkedin.com/in/brandon-vancamp-123360150/" rel="noreferrer noopener" target="_blank" className="social linkedin">Linkedin</a></li>
-            <li><a href="https://twitter.com/developerOneB/" target="_blank" rel="noreferrer noopener" className="social twitter">Linkedin</a></li>
+            <li><a href="https://twitter.com/developerOneB/" target="_blank" rel="noreferrer noopener" className="social twitter">Twitter</a></li>
           </ul>
         </Jumbotron>
           <Grid>
@@ -28,6 +28,8 @@ const Head = (props) => {
                     <ul className="flex">
                     <li><NavLink to={`/bio`}>Bio</NavLink></li>
                     {/* <li><NavLink to={`/bio/badges`}>Skill Cap</NavLink></li> */}
+                    <li><NavLink to={`/bio/login`}>Login</NavLink></li>
+                    {/* <li><NavLink to={`/bio/crypto`}>Trade With Me</NavLink></li> */}
                     </ul> 
                     }/>
                 </Nav>

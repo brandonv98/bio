@@ -5,6 +5,7 @@ import {
 	Row,
 	Grid
 } from 'react-bootstrap';
+
 const Container = (props) => {
 	let dataA = props.data;
 	let overview = dataA.map((section, i) => {

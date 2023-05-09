@@ -22,7 +22,7 @@ const ContactForm = (props) => {
           <form
             id="contact-form"
             className="form"
-            action="https://formspree.io/brandon@csdevs.io"
+            action="https://formspree.io/brandon@vancamp.dev"
             method="POST"
             role="form">
             <div className="form-group">
