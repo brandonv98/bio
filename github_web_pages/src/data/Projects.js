@@ -26,7 +26,7 @@ export const ProjectsData = [{
 		title: "Wheel Of Success",
 		img_src: require('../project_images/word_guessing/inGame.png'),
 		skills: ['Javascript', 'SVG', 'CSS', 'HTML', 'Git', 'GitHub'],
-		description: "Heavy JavaScript based project. JS was used to loop threw an array of phrases randomly. Once one is picked, that array is then appended to the screen, and you are ready to play! What happens next is to handle user input for each letter guessed. So we check threw each letter of the phrase of the picked array. If the user was correct then reveal that letter, if the user was incorrect we take a point off there score. Also we check to see if the game is currently still in play or if the user has lost. All this is done with JavaScript.",
+		description: "Heavy JavaScript based project. JS was used to loop through an array of phrases randomly. Once one is picked, that array is then appended to the screen, and you are ready to play! What happens next is to handle user input for each letter guessed. So we check through each letter of the phrase of the picked array. If the user was correct then reveal that letter, if the user was incorrect we take a point off there score. Also we check to see if the game is currently still in play or if the user has lost. All this is done with JavaScript.",
 		project_link_github: "Game_Show_App"
 	},
 	{
