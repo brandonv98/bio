@@ -3,7 +3,7 @@ export const ProjectsData = [{
 		img_src: require('../project_images/flikr_project/No-Results-Layout.png'),
 		img_src_next: require('../project_images/flikr_project/flikr_project.png'),
 		skills: ['JavaScript', 'ReactJS', 'JSX', 'API', 'CSS', 'HTML', 'Git', 'React-Router-Dom', 'GitHub'],
-		description: "Ooh ReactJS, now let me tell you about this project. First we get a connection with our API,  parse the information and store it in an array. For this I used axios, next we create separate components for organization so we can loop threw our data and append it onto the screen. React-Router-Dom was used to handle all of the routing, and keeping the DOM in sync.",
+		description: "Ooh ReactJS, now let me tell you about this project. First we get a connection with our API,  parse the information and store it in an array. For this I used axios, next we create separate components for organization so we can loop through our data and append it onto the screen. React-Router-Dom was used to handle all of the routing, and keeping the DOM in sync.",
 		project_link_github: "React_Flickr_Gallery",
 		link_src: "React_Flickr_Gallery"
   },
